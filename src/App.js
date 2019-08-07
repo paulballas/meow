@@ -10,6 +10,7 @@ import DgDrywall from  './images/home/dg-drywall.png'
 import Illustrations from './images/home/pink-bear.png'
 import PhoneClip from './images/home/iphone-clip.png'
 import VideoPana from './images/home/pana-video.mp4'
+import ClassScout from './images/home/classscout.mp4'
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <div className='row'>
 
           <div className='col-md-6'>
-            <div className='left'>
+            <div className='left fixed'>
               <img
                 src={PaulBallasHero}
                 alt='Paul Ballas'
@@ -60,8 +61,11 @@ function App() {
                 />
             </div>
 
-            <div className='proj proj--e'>
+            <div className='proj proj--e proj--v'>
               <img src={PhoneClip} alt='iPhone' />
+              <video autoPlay loop muted>
+                <source src={ClassScout} />
+              </video>
             </div>
 
             <div className='proj proj--f'>

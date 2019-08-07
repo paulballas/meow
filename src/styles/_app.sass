@@ -4,10 +4,16 @@
   background: $blue-1
   .left
     padding: 2rem
+  .fixed
+    position: initial
+    width: initial
+    @media screen and (min-width: 752px)
+      display: block
+      position: fixed
+      width: 40vw
   .proj
     position: relative
     padding: 2rem
-    // border-bottom: 2px $gray-1 solid
     &--a
       background: $pink-2
     &--b
@@ -28,11 +34,10 @@
       border-radius: 4px
     video
       position: absolute
-      top: 28%
+      top: 30%
       left: 30%
       width: 40%
       height: auto
-      clip-path: polygon(0 0, 100% 0, 100% 73%, 0 73%)
 
 img
   display: block
@@ -40,34 +45,3 @@ img
   height: auto
   &.p-hero
     margin-bottom: 2rem
-
-// .phone-video-link
-//   position: absolute
-//   top: 2em
-//   right: 0
-//   left: 0
-//   margin: 0 auto
-//   width: 70%
-//   clip-path: polygon(0 0, 100% 0, 100% 47.5%, 0 47.5%)
-//   video
-//     position: absolute
-//     top: 12.1%
-//     left: 6.5%
-//     z-index: 700
-//     width: 87%
-//     height: auto
-//
-// .phone-video
-//   position: relative
-//   top: 2em
-//   right: 0
-//   left: 0
-//   margin: 0 auto
-//   width: 70%
-//   video
-//     position: absolute
-//     top: 12.1%
-//     left: 6.5%
-//     z-index: 700
-//     width: 87%
-//     height: auto
