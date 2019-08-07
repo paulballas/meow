@@ -1,0 +1,51 @@
+body
+  padding: 0
+  margin: 0
+
+input, label, select, button, textarea
+  margin: 0
+  border: 0
+  padding: 0
+  display: inline-block
+  vertical-align: middle
+  white-space: normal
+  background: none
+  line-height: 1
+  font-size: ms(1)
+
+input, select, textarea
+  &:focus
+    outline: 0
+
+textarea
+  vertical-align: top
+  overflow: auto
+
+button
+  overflow: visible
+  width: auto
+
+select
+  &[multiple]
+    vertical-align: top
+
+input
+  &[type=date], &[type=datetime], &[type=datetime-local], &[type=email], &[type=month], &[type=number], &[type=password], &[type=range], &[type=search], &[type=tel], &[type=text], &[type=time], &[type=url], &[type=week]
+  &[type=checkbox], &[type=radio]
+    width: ms(1)
+    height: ms(1)
+  &[type=file]
+  &[type=search]
+    -webkit-appearance: textfield
+    -webkit-box-sizing: content-box
+  &[type="reset"], &[type="button"], &[type="submit"]
+    overflow: visible
+    width: auto
+
+\::-webkit-search-decoration
+  display: none
+
+\::-webkit-file-upload-button
+  padding: 0
+  border: 0
+  background: none
