@@ -27,7 +27,8 @@ function App() {
                 className='p-hero'
                 />
               <h2 className='zing whale-2'>designer / developer / cyclist</h2>
-              <p>👋 <br/>Hey there! I'm a designer based in Denver, CO specializing in web and mobile app design. On the side, I also create illustrations and comics. Want to chat? <a href='mailto:paul@sudodigital.com'>Drop me a line</a>.</p>
+              <p>👋 <br/>Hey there! I'm a designer based in Denver, CO specializing in web and mobile app design. On the side, I also create illustrations and comics.</p>
+              <p>Want to chat? <a href='mailto:paul@sudodigital.com'>Drop me a line</a>.</p>
             </div>
           </div>
 
