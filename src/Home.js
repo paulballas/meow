@@ -21,7 +21,7 @@ class Home extends React.Component {
 
   projectFooter = (name) => {
     return (
-      <div className='proj-footer animated slideInUp a-2'>
+      <div className='proj-footer animated slideInDown a-2'>
         <p className='zing'>{name}</p>
       </div>
     )
@@ -63,56 +63,124 @@ class Home extends React.Component {
                 {this.state.activeHover === 'pana'? this.projectFooter('Pana - seamless business travel') : null}
               </Link>
 
-              <div className='proj proj--a proj--v'>
-                <img src={PhoneClip} alt='iPhone' />
-                <video autoPlay loop muted>
-                  <source src={VideoPana} />
-                </video>
-              </div>
+              <Link
+                to='/medstar'
+                className='proj proj--b'
+                onMouseEnter={() => this.setState({activeHover: 'medstar'})}
+                onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
+                <img src={MedStar} alt='MedStar' />
 
-              <div className='proj proj--b'>
-                <img
-                  src={MedStar}
-                  alt='MedStar'
-                  />
-              </div>
+                {
+                  this.state.activeHover === 'medstar'?
+                  <div className='project-hover animated fadeIn' />
+                  : null
+                }
+                {
+                  this.state.activeHover === 'medstar'?
+                  this.projectFooter('Medstar - mental wellness for schools')
+                  : null
+                }
+              </Link>
 
-              <div className='proj proj--c'>
-                <img
-                  src={Usac}
-                  alt='MedStar'
-                  />
-              </div>
+              <Link
+                to='/usac'
+                className='proj proj--c'
+                onMouseEnter={() => this.setState({activeHover: 'usac'})}
+                onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
+                <img src={Usac} alt='USAC' />
 
-              <div className='proj proj--d'>
-                <img
-                  src={Odc}
-                  alt='ODC'
-                  />
-              </div>
+                {
+                  this.state.activeHover === 'usac'?
+                  <div className='project-hover animated fadeIn' />
+                  : null
+                }
+                {
+                  this.state.activeHover === 'usac'?
+                  this.projectFooter('USA Cycling')
+                  : null
+                }
+              </Link>
 
-              <div className='proj proj--e proj--v'>
+              <Link
+                to='/odc'
+                className='proj proj--d'
+                onMouseEnter={() => this.setState({activeHover: 'odc'})}
+                onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
+                <img src={Odc} alt='ODC' />
+
+                {
+                  this.state.activeHover === 'odc'?
+                  <div className='project-hover animated fadeIn' />
+                  : null
+                }
+                {
+                  this.state.activeHover === 'odc'?
+                  this.projectFooter('Oracle Data Cloud')
+                  : null
+                }
+              </Link>
+
+              <Link
+                to='/class-scout'
+                className='proj proj--e proj--v'
+                onMouseEnter={() => this.setState({activeHover: 'class'})}
+                onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
                 <img src={PhoneClip} alt='iPhone' />
                 <video autoPlay loop muted>
                   <source src={ClassScout} />
                 </video>
-              </div>
 
-              <div className='proj proj--f'>
-                <img
-                  src={DgDrywall}
-                  alt='Dan Gray Drywall'
-                  />
-              </div>
+                {
+                  this.state.activeHover === 'class'?
+                  <div className='project-hover animated fadeIn' />
+                  : null
+                }
+                {
+                  this.state.activeHover === 'class'?
+                  this.projectFooter('Class Scout - Mental health tracker for schools')
+                  : null
+                }
+              </Link>
 
-              <div className='proj proj--g'>
-                <img
-                  src={Illustrations}
-                  alt='Pink Bear Illustrations'
-                  />
-              </div>
+              <Link
+                to='/dangray'
+                className='proj proj--f'
+                onMouseEnter={() => this.setState({activeHover: 'dangray'})}
+                onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
+                <img src={DgDrywall} alt='Dan Gray Drywall' />
+
+                {
+                  this.state.activeHover === 'dangray'?
+                  <div className='project-hover animated fadeIn' />
+                  : null
+                }
+                {
+                  this.state.activeHover === 'dangray'?
+                  this.projectFooter('Dan Gray Drywall')
+                  : null
+                }
+              </Link>
+
+              <Link
+                to='/illustrations'
+                className='proj proj--g'
+                onMouseEnter={() => this.setState({activeHover: 'illustrations'})}
+                onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
+                <img src={Illustrations} alt='Illustrations' />
+
+                {
+                  this.state.activeHover === 'illustrations'?
+                  <div className='project-hover animated fadeIn' />
+                  : null
+                }
+                {
+                  this.state.activeHover === 'illustrations'?
+                  this.projectFooter('Illustrations')
+                  : null
+                }
+              </Link>
+
             </div>
-
           </div>
         </div>
 
