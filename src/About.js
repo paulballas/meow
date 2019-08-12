@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import ReactTooltip from 'react-tooltip'
 
 import AboutPaul from './images/about/about-paul.png';
 import PaulBallas from './images/PaulBallas.svg'
@@ -15,9 +16,11 @@ class About extends React.Component {
             <div className='col-md-2 col-xs-8'>
               <Link to='/'>
                 <img
+                  data-tip='Click me to go back home'
                   src={PaulBallas}
                   alt='Paul Ballas'
                   />
+                <ReactTooltip />
               </Link>
             </div>
           </div>
@@ -73,7 +76,7 @@ class About extends React.Component {
             <div className='col-xs-12'>
               <h2 className='zing'>design process</h2>
             </div>
-            <div className='col-x-12'>
+            <div className='col-md-8 col-xs-12'>
               <div className='slide-container'>
                 <iframe
                   src="https://docs.google.com/presentation/d/e/2PACX-1vQfyubCyBws-JRMWcfwgDMHXZvaj978xoVWnAX5IESESuxmStgzUn8o_fRfgOy1AP7YDCXNKGJElYWg/embed?start=false&loop=false&delayms=3000"
@@ -86,9 +89,6 @@ class About extends React.Component {
                   webkitallowfullscreen="true">
                 </iframe>
               </div>
-            </div>
-            <div className='col-xs-12'>
-              <h3>sup dog</h3>
             </div>
           </div>
         </div>
