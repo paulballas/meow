@@ -156,7 +156,7 @@ class Home extends React.Component {
                 }
                 {
                   this.state.activeHover === 'odc'?
-                  this.projectFooter('Oracle Data Cloud')
+                  this.projectFooter('ODC')
                   : null
                 }
               </Link>

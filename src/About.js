@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import ReactTooltip from 'react-tooltip'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Space from './components/Space';
 
 import AboutPaul from './images/about/about-paul.png';
-import PaulBallas from './images/PaulBallas.svg'
 import Books from './images/about/books.png'
 
 class About extends React.Component {
@@ -11,20 +12,7 @@ class About extends React.Component {
     return (
       <div className='paul-about'>
 
-        <div className='container header'>
-          <div className='row center-xs middle-xs'>
-            <div className='col-md-2 col-xs-8'>
-              <Link to='/'>
-                <img
-                  data-tip='Click me to go back home'
-                  src={PaulBallas}
-                  alt='Paul Ballas'
-                  />
-                <ReactTooltip />
-              </Link>
-            </div>
-          </div>
-        </div>
+        <Header/>
 
         <div className='container body-pad'>
 
@@ -42,18 +30,20 @@ class About extends React.Component {
             </div>
           </div>
 
-          <div className='space space--2'></div>
+          <Space h='3'/>
 
-          <div className='row middle-xs'>
+          <div className='row middle-xs center-xs'>
             <div className='col-xs-12'>
               <h2 className='zing'>Book Contributions</h2>
             </div>
             <div className='col-md-3 col-xs-10'>
               <img
+                alt='Hooked By Nir Eyal / Designing for Behavior Change by Stephen Wendel PhD'
+                className='m-b-xs-1'
                 src={Books}
                 />
             </div>
-            <div className='col-md-9 col-xs-12'>
+            <div className='col-md-6 col-xs-12 text-left'>
               <p>I've made two (small) book contributions. Both books discuss behavioral psychology and how to nurture user engagement:</p>
               <p><a
                 className='book-link'
@@ -70,9 +60,9 @@ class About extends React.Component {
             </div>
           </div>
 
-          <div className='space space--2'></div>
+          <Space h='3'/>
 
-          <div className='row'>
+          <div className='row center-xs'>
             <div className='col-xs-12'>
               <h2 className='zing'>design process</h2>
             </div>
@@ -92,6 +82,7 @@ class About extends React.Component {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     )
   }

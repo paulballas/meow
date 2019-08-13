@@ -7,6 +7,15 @@
 .header
   padding-top: 1rem
 
+.footer
+  padding: 2rem
+  background: $pink-2
+  h1
+    color: $gray-1
+  a
+    color: $gray-1
+    font-size: 1.25rem
+    text-decoration: none
 img
   display: block
   width: 100%
@@ -19,6 +28,28 @@ img
     transition: 200ms
     &:hover
       width: 2.5rem
+
+.suggestion
+  background: $gray-1
+  min-height: 9rem
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  border: 1px solid $gray-3
+  border-radius: 4px
+  text-decoration: none
+  transition: 400ms
+  padding: 1rem
+  &:hover
+    background: $blue-2
+    border-color: $blue-4
+  p
+    margin-bottom: 0
+  img
+    height: 4rem
+    width: auto
+    margin-bottom: 1rem
 
 // Home
 .paul-home
@@ -89,6 +120,26 @@ img
     &:last-child
       margin-right: 0
 
+.slide-container
+  position: relative
+  padding-bottom: 49%
+  padding-top: 15%
+  height: 0
+  overflow: hidden
+  &.y-t
+    padding-top: 8%
+  @media screen and (min-width: 752px)
+    padding-top: 9.5%
+    padding-bottom: 51%
+    &.y-t
+      padding-top: 5.5%
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
 // about
 .paul-about
   background: $blue-1
@@ -100,18 +151,14 @@ img
     font-style: italic
     font-weight: 700
     text-decoration: underline
-  .slide-container
-    position: relative
-    padding-bottom: 49%
-    padding-top: 15%
-    height: 0
-    overflow: hidden
+
+// pana
+.paul-pana
+  min-height: 100vh
+  background: linear-gradient($blue-1, $pink-1)
+  img.pana-mobile
+    width: 60%
+    margin: 1rem auto
     @media screen and (min-width: 752px)
-      padding-top: 9.5%
-      padding-bottom: 51%
-    iframe
-      position: absolute
-      top: 0
-      left: 0
       width: 100%
-      height: 100%
+      margin: 0
