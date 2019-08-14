@@ -20,13 +20,13 @@ class About extends React.Component {
             <div className='col-md-4 col-xs-12 p-b-1'>
               <img
                 src={AboutPaul}
-                className='about-paul'
+                className='border'
                 />
             </div>
             <div className='col-md-8 col-xs-12 p-b-1 p-l-xs-2'>
               <h1 className='zing'>hey there!</h1>
               <p>I'm Paul, a designer, and developer living in Denver, CO. I specialize in UX design for web and mobile applications but have a also have extensive experience in visual and animation design. I also love UX research and learning more about how to to make technology products improve the lives of users.</p>
-              <p>Outside of my design work, I'm an avid cyclist and can typically found on one of my (too many) bikes, or drawing <Link to='/illustrations'>illustrations</Link>.</p>
+              <p>Outside of my design work, I'm an avid cyclist and can typically be found on one of my (too many) bikes, or drawing <Link to='/illustrations'>illustrations</Link>.</p>
             </div>
           </div>
 
