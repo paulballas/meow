@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Space from './components/Space';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Space from '../components/Space';
 
-import AboutPaul from './images/about/about-paul.png';
-import Books from './images/about/books.png'
+import AboutPaul from '../images/about/about-paul.png';
+import Books from '../images/about/books.png'
 
 class About extends React.Component {
   render() {
@@ -19,6 +19,7 @@ class About extends React.Component {
           <div className='row middle-xs'>
             <div className='col-md-4 col-xs-12 p-b-1'>
               <img
+                alt='Paul Ballas'
                 src={AboutPaul}
                 className='border'
                 />
@@ -69,6 +70,7 @@ class About extends React.Component {
             <div className='col-md-8 col-xs-12'>
               <div className='slide-container'>
                 <iframe
+                  title='Paul Ballas Design Process'
                   src="https://docs.google.com/presentation/d/e/2PACX-1vQfyubCyBws-JRMWcfwgDMHXZvaj978xoVWnAX5IESESuxmStgzUn8o_fRfgOy1AP7YDCXNKGJElYWg/embed?start=false&loop=false&delayms=3000"
                   frameBorder="0"
                   width='960px'

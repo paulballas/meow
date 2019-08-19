@@ -11,7 +11,7 @@ class Header extends React.Component {
           <div className='col-md-2 col-xs-8'>
             <Link to='/'>
               <img
-                data-tip='Click me to go back home'
+                data-tip={"There's no place like home"}
                 src={PaulBallas}
                 alt='Paul Ballas'
                 />

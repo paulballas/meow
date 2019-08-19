@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import ReactTooltip from 'react-tooltip'
-import PaulBallas from '../images/PaulBallas.svg'
 
 class Footer extends React.Component {
   render() {

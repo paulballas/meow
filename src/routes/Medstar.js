@@ -1,20 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Suggest from './components/Suggest';
-import Space from './components/Space';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Suggest from '../components/Suggest';
+import Space from '../components/Space';
 import ReactTooltip from 'react-tooltip';
 
-import MedStarFull from './images/medstar/medstar-full.png';
-import MedStarMap from './images/medstar/medstar-map.png';
-import MedStarCTA from './images/medstar/med-cta.png';
-import PanaMock3 from './images/pana/p-mock-3.png';
+import MedStarFull from '../images/medstar/medstar-full.png';
+import MedStarMap from '../images/medstar/medstar-map.png';
+import MedStarCTA from '../images/medstar/med-cta.png';
+import PanaMock3 from '../images/pana/p-mock-3.png';
 
 class Medstar extends React.Component {
   render() {
     return (
-      <div className='paul-pana'>
+      <div className='proj-wrapper'>
         <Header />
 
         <div className='container body-pad'>

@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import PaulBallasHero from './images/PaulBallas.svg'
-import Dribbble from './images/dribbble-ball-icon.svg'
-import LinkedIn from './images/linkedin.svg'
-import Medium from './images/medium.svg'
+import PaulBallasHero from '../images/PaulBallas.svg'
+import Dribbble from '../images/dribbble-ball-icon.svg'
+import LinkedIn from '../images/linkedin.svg'
+import Medium from '../images/medium.svg'
 
-import MedStar from  './images/home/medstar-wise.png'
-import Usac from  './images/home/usac.png'
-import Odc from  './images/home/odc.png'
-import DgDrywall from  './images/home/dg-drywall.png'
-import Illustrations from './images/home/pink-bear.png'
-import PhoneClip from './images/home/iphone-clip.png'
-import VideoPana from './images/home/pana-video.mp4'
-import ClassScout from './images/home/classscout.mp4'
+import MedStar from  '../images/home/medstar-wise.png'
+import Usac from  '../images/home/usac.png'
+import Odc from  '../images/home/odc.png'
+import DgDrywall from  '../images/home/dg-drywall.png'
+import Illustrations from '../images/home/pink-bear.png'
+import PhoneClip from '../images/home/iphone-clip.png'
+import VideoPana from '../images/home/pana-video.mp4'
+import ClassScout from '../images/home/classscout.mp4'
 
 class Home extends React.Component {
   constructor(props) {
@@ -46,7 +46,7 @@ class Home extends React.Component {
                   className='p-hero'
                   />
                 <h2 className='zing whale-2'>designer / developer / cyclist</h2>
-                <p>👋 <br/>Hey there! I'm a designer based in Denver, CO specializing in web and mobile app design. On the side, I also create illustrations and comics.</p>
+                <p><span role='img' aria-label='wave'>👋</span> <br/>Hey there! I'm a designer based in Denver, CO specializing in web and mobile app design. On the side, I also create illustrations and comics.</p>
                 <p>Want to chat? <a href='mailto:paul@sudodigital.com'>Drop me a line</a>.</p>
                 <p>
                   <Link to='/about'>Learn more about Paul</Link>

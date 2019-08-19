@@ -153,7 +153,7 @@ img
     text-decoration: underline
 
 // pana
-.paul-pana
+.proj-wrapper
   min-height: 100vh
   background: linear-gradient($blue-1, $pink-1)
   img.pana-mobile
@@ -162,3 +162,21 @@ img
     @media screen and (min-width: 752px)
       width: 100%
       margin: 0
+  .phone-video
+    position: relative
+    video
+      position: absolute
+      z-index: 1000
+      width: 78.6%
+      top: 12%
+      left: 10.6%
+      height: auto
+      @media screen and (min-width: 752px)
+        width: 52.4%
+        top: 12%
+        left: 23.8%
+    img.class-video
+      width: 90%
+      margin: 0 auto
+      @media screen and (min-width: 752px)
+        width: 60%

@@ -64,7 +64,7 @@ class Suggest extends React.Component {
         return (
           <div key={project.id} className='col-md-2 col-xs-6'>
             <Link to={project.link} className='suggestion'>
-              <img src={project.img} />
+              <img alt={project.name} src={project.img} />
               <p>{project.name}</p>
             </Link>
           </div>

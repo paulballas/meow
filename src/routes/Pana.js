@@ -1,20 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Suggest from './components/Suggest';
-import Space from './components/Space';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Suggest from '../components/Suggest';
+import Space from '../components/Space';
 import ReactTooltip from 'react-tooltip';
 
-import PanaMobileFull from './images/pana/pana-mobile-full.png';
-import PanaMock1 from './images/pana/p-mock-1.png';
-import PanaMock2 from './images/pana/p-mock-2.png';
-import PanaMock3 from './images/pana/p-mock-3.png';
+import PanaMobileFull from '../images/pana/pana-mobile-full.png';
+import PanaMock1 from '../images/pana/p-mock-1.png';
+import PanaMock2 from '../images/pana/p-mock-2.png';
+import PanaMock3 from '../images/pana/p-mock-3.png';
 
 class Pana extends React.Component {
   render() {
     return (
-      <div className='paul-pana'>
+      <div className='proj-wrapper'>
         <Header />
 
         <div className='container body-pad'>
@@ -91,6 +90,7 @@ class Pana extends React.Component {
             <div className='col-md-8 col-xs-12'>
               <div className='slide-container y-t'>
                 <iframe
+                  title='Pana Crosby Video'
                   width='960px'
                   height='569px'
                   max-width='100%'
