@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Suggest from '../components/Suggest';
 import Space from '../components/Space';
+import ImgZoom from '../components/ImgZoom';
 import ReactTooltip from 'react-tooltip';
 
 import PanaMobileFull from '../images/pana/pana-mobile-full.png';
@@ -11,9 +12,40 @@ import PanaMock2 from '../images/pana/p-mock-2.png';
 import PanaMock3 from '../images/pana/p-mock-3.png';
 
 class Pana extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgZoom: false,
+      imgSrc: ''
+    }
+  }
+
+  zoom = (imgVari) => {
+    this.setState({
+      imgZoom: true,
+      imgSrc: imgVari
+    })
+  }
+
+  zoomClose = () => {
+    this.setState({imgZoom: false})
+  }
+
+  renderImgZoom = () => {
+    if (this.state.imgZoom) {
+      return <ImgZoom
+        closeImgZoom={this.zoomClose}
+        img={this.state.imgSrc}
+        />
+    } else {
+      return null
+    }
+  }
+
   render() {
     return (
       <div className='proj-wrapper'>
+        {this.renderImgZoom()}
         <Header />
 
         <div className='container body-pad'>
@@ -54,24 +86,27 @@ class Pana extends React.Component {
           <div className='row center-xs middle-xs'>
             <div className='col-md-3 col-xs-12'>
               <img
+                onClick={ () => this.zoom(PanaMock1) }
                 data-tip='Initial wireframe'
                 src={PanaMock1}
                 alt='Pana Mockup'
-                className='pana-mobile'/>
+                className='pana-mobile zoomable'/>
             </div>
             <div className='col-md-3 col-xs-12'>
               <img
+                onClick={ () => this.zoom(PanaMock2) }
                 data-tip='Wiframe v2 after customer feedback'
                 src={PanaMock2}
                 alt='Pana Mockup'
-                className='pana-mobile'/>
+                className='pana-mobile zoomable'/>
             </div>
             <div className='col-md-3 col-xs-12'>
               <img
+                onClick={ () => this.zoom(PanaMock3) }
                 data-tip='Final mockup ready for code'
                 src={PanaMock3}
                 alt='Pana Mockup'
-                className='pana-mobile'/>
+                className='pana-mobile zoomable'/>
             </div>
             <ReactTooltip />
           </div>

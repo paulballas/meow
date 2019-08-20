@@ -1,0 +1,28 @@
+.modal
+  display: block
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba($pink-4, 0.6)
+  z-index: 5000
+  overflow-y: auto
+  transition: all 400ms
+  padding: 3rem
+  .modal-container
+    overflow-y: visible
+    max-height: 100vh
+    position: relative
+    .modal-content
+      overflow-y: visible
+      margin-bottom: 0
+      min-height: 0
+      display: block
+      position: relative
+      z-index: 3000
+      img
+        width: 30%
+        margin: 0 auto
+        &.wide-zoom
+          width: 70%   

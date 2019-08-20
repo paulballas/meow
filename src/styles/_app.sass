@@ -20,6 +20,9 @@ img
   display: block
   width: 100%
   height: auto
+  &.zoomable
+    &:hover
+      cursor: zoom-in
   &.p-hero
     margin-bottom: 2rem
   &.port-link
@@ -31,6 +34,13 @@ img
   &.border
     border-radius: 4px
     border: 2px solid $pink-2
+
+.img-zoom
+  position: absolute
+  top: 0
+  left: 0
+  background: rgba($pink-3, 0.5)
+  height: 100%
 
 .suggestion
   background: $gray-1
@@ -162,6 +172,14 @@ img
     @media screen and (min-width: 752px)
       width: 100%
       margin: 0
+  .dg-logos
+    background: $gray-1
+    padding: 1rem
+    border-radius: 4px
+    border: 2px solid $pink-2
+    &--b
+      background: $whale-1
+
   .phone-video
     position: relative
     video

@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Suggest from '../components/Suggest';
 import Space from '../components/Space';
+import ImgZoom from '../components/ImgZoom';
 
 import UsacMarketing from '../images/usac/usac-marketing.png';
 import UsacBtns from '../images/usac/usac-btns.png';
@@ -17,9 +18,41 @@ import UsacScreen3 from '../images/usac/usac-screen3.png';
 import UsacScreen4 from '../images/usac/usac-screen4.png';
 
 class Usac extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgZoom: false,
+      imgSrc: ''
+    }
+  }
+
+  zoom = (imgVari) => {
+    this.setState({
+      imgZoom: true,
+      imgSrc: imgVari
+    })
+  }
+
+  zoomClose = () => {
+    this.setState({imgZoom: false})
+  }
+
+  renderImgZoom = () => {
+    if (this.state.imgZoom) {
+      return <ImgZoom
+        wideZoom={true}
+        closeImgZoom={this.zoomClose}
+        img={this.state.imgSrc}
+        />
+    } else {
+      return null
+    }
+  }
+
   render() {
     return (
       <div className='proj-wrapper'>
+        {this.renderImgZoom()}
         <Header />
 
         <div className='container body-pad'>
@@ -65,22 +98,46 @@ class Usac extends React.Component {
 
             <div className='row center-xs'>
               <div className='col-md-6 col-xs-12'>
-                <img src={UsacBtns} alt='USAC Components' className='border m-b-1'/>
+                <img
+                  onClick={ () => this.zoom(UsacBtns) }
+                  src={UsacBtns}
+                  alt='USAC Components'
+                  className='border m-b-1 zoomable'/>
               </div>
               <div className='col-md-6 col-xs-12'>
-                <img src={UsacColors} alt='USAC Components' className='border m-b-1'/>
+                <img
+                  onClick={ () => this.zoom(UsacColors) }
+                  src={UsacColors}
+                  alt='USAC Components'
+                  className='border m-b-1 zoomable'/>
               </div>
               <div className='col-md-6 col-xs-12'>
-                <img src={UsacMobile} alt='USAC Components' className='border m-b-1'/>
+                <img
+                  onClick={ () => this.zoom(UsacMobile) }
+                  src={UsacMobile}
+                  alt='USAC Components'
+                  className='border m-b-1 zoomable'/>
               </div>
               <div className='col-md-6 col-xs-12'>
-                <img src={UsacMobile2} alt='USAC Components' className='border m-b-1'/>
+                <img
+                  onClick={ () => this.zoom(UsacMobile2) }
+                  src={UsacMobile2}
+                  alt='USAC Components'
+                  className='border m-b-1 zoomable'/>
               </div>
               <div className='col-md-6 col-xs-12'>
-                <img src={UsacTables} alt='USAC Components' className='border m-b-1'/>
+                <img
+                  onClick={ () => this.zoom(UsacTables) }
+                  src={UsacTables}
+                  alt='USAC Components'
+                  className='border m-b-1 zoomable'/>
               </div>
               <div className='col-md-6 col-xs-12'>
-                <img src={UsacType} alt='USAC Components' className='border m-b-1'/>
+                <img
+                  onClick={ () => this.zoom(UsacType) }
+                  src={UsacType}
+                  alt='USAC Components'
+                  className='border m-b-1 zoomable'/>
               </div>
             </div>
 
@@ -96,16 +153,32 @@ class Usac extends React.Component {
 
           <div className='row center-xs'>
             <div className='col-md-6 col-xs-12'>
-              <img src={UsacScreen1} alt='USAC Components' className='border m-b-1'/>
+              <img
+                onClick={ () => this.zoom(UsacScreen1) }
+                src={UsacScreen1}
+                alt='USAC Components'
+                className='border m-b-1 zoomable'/>
             </div>
             <div className='col-md-6 col-xs-12'>
-              <img src={UsacScreen2} alt='USAC Components' className='border m-b-1'/>
+              <img
+                onClick={ () => this.zoom(UsacScreen2) }
+                src={UsacScreen2}
+                alt='USAC Components'
+                className='border m-b-1 zoomable'/>
             </div>
             <div className='col-md-6 col-xs-12'>
-              <img src={UsacScreen3} alt='USAC Components' className='border m-b-1'/>
+              <img
+                onClick={ () => this.zoom(UsacScreen3) }
+                src={UsacScreen3}
+                alt='USAC Components'
+                className='border m-b-1 zoomable'/>
             </div>
             <div className='col-md-6 col-xs-12'>
-              <img src={UsacScreen4} alt='USAC Components' className='border m-b-1'/>
+              <img
+                onClick={ () => this.zoom(UsacScreen4) }
+                src={UsacScreen4}
+                alt='USAC Components'
+                className='border m-b-1 zoomable'/>
             </div>
           </div>
           <Space h='5'/>

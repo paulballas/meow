@@ -184,7 +184,7 @@ class Home extends React.Component {
               </Link>
 
               <Link
-                to='/dangray'
+                to='/dan-gray'
                 className='proj proj--f'
                 onMouseEnter={() => this.setState({activeHover: 'dangray'})}
                 onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>

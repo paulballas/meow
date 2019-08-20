@@ -12,6 +12,7 @@ import Medstar from './routes/Medstar'
 import Usac from './routes/Usac'
 import Odc from './routes/Odc'
 import Class from './routes/Class'
+import DanGray from './routes/DanGray'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/usac" exact component={Usac} />
         <Route path="/odc" exact component={Odc} />
         <Route path="/class-scout" exact component={Class} />
+        <Route path="/dan-gray" exact component={DanGray} />
       </ScrollToTop>
     </Router>
   );
