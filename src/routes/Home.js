@@ -6,6 +6,7 @@ import Dribbble from '../images/dribbble-ball-icon.svg'
 import LinkedIn from '../images/linkedin.svg'
 import Medium from '../images/medium.svg'
 
+import Modal from '../components/Modal';
 import MedStar from  '../images/home/medstar-wise.png'
 import Usac from  '../images/home/usac.png'
 import Odc from  '../images/home/odc.png'
@@ -19,7 +20,20 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeHover: ''
+      activeHover: '',
+      modal: false
+    }
+  }
+
+  setModal = (modalState) => {
+    this.setState({ modal: modalState })
+  }
+
+  renderModal = () => {
+    if (this.state.modal) {
+      return <Modal closeModal={() => this.setModal(false)} />
+    } else {
+      return null
     }
   }
 
@@ -34,6 +48,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className='paul-home'>
+        {this.renderModal()}
 
         <div className='container'>
           <div className='row'>
@@ -142,8 +157,8 @@ class Home extends React.Component {
                 }
               </Link>
 
-              <Link
-                to='/odc'
+              <a
+                onClick={ () => this.setModal(true) }
                 className='proj proj--d'
                 onMouseEnter={() => this.setState({activeHover: 'odc'})}
                 onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
@@ -156,10 +171,10 @@ class Home extends React.Component {
                 }
                 {
                   this.state.activeHover === 'odc'?
-                  this.projectFooter('ODC')
+                  this.projectFooter('Oracle')
                   : null
                 }
-              </Link>
+              </a>
 
               <Link
                 to='/class-scout'
@@ -183,7 +198,7 @@ class Home extends React.Component {
                 }
               </Link>
 
-              <Link
+              {/*}<Link
                 to='/dan-gray'
                 className='proj proj--f'
                 onMouseEnter={() => this.setState({activeHover: 'dangray'})}
@@ -200,7 +215,7 @@ class Home extends React.Component {
                   this.projectFooter('Dan Gray Drywall')
                   : null
                 }
-              </Link>
+              </Link>*/}
 
               <Link
                 to='/illustrations'

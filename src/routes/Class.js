@@ -120,6 +120,8 @@ class Class extends React.Component {
             <ReactTooltip />
           </div>
 
+          {/*
+
           <Space h='5'/>
 
           <div className='row center-xs'>
@@ -138,6 +140,8 @@ class Class extends React.Component {
                 />
             </div>
           </div>
+          */}
+
           <Space h='5'/>
           <Suggest current={5} />
 

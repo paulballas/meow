@@ -10,9 +10,9 @@ import About from './routes/About'
 import Pana from './routes/Pana'
 import Medstar from './routes/Medstar'
 import Usac from './routes/Usac'
-import Odc from './routes/Odc'
 import Class from './routes/Class'
 import DanGray from './routes/DanGray'
+import Illustrations from './routes/Illustrations'
 
 function App() {
   return (
@@ -23,9 +23,9 @@ function App() {
         <Route path="/pana" exact component={Pana} />
         <Route path="/medstar" exact component={Medstar} />
         <Route path="/usac" exact component={Usac} />
-        <Route path="/odc" exact component={Odc} />
         <Route path="/class-scout" exact component={Class} />
         <Route path="/dan-gray" exact component={DanGray} />
+        <Route path="/Illustrations" exact component={Illustrations} />
       </ScrollToTop>
     </Router>
   );
