@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBrowserHistory } from 'history';
-import logo from './logo.svg';
 import './styles/meow.sass'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop'

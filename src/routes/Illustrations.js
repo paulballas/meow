@@ -70,7 +70,7 @@ class Class extends React.Component {
             {this.renderIlls()}
           </div>
           <Space h='5'/>
-          <Suggest current={7} />
+          <Suggest current={6} />
         </div>
         <Footer />
       </div>

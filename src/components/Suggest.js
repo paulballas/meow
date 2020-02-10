@@ -43,12 +43,6 @@ const projects = [
   },
   {
     "id": 6,
-    "link": "/dangray",
-    "name": "Dan Gray Drywall",
-    "img": IconDg
-  },
-  {
-    "id": 7,
     "link": "/illustrations",
     "name": "Illustrations",
     "img": IconIll

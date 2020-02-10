@@ -99,7 +99,6 @@ class Home extends React.Component {
                       />
                   </a>
                 </div>
-
               </div>
             </div>
 
