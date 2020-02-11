@@ -62,9 +62,9 @@ class Home extends React.Component {
                   />
                 <h2 className='zing whale-2'>designer / developer / cyclist</h2>
                 <p><span role='img' aria-label='wave'>👋</span> <br/>Hey there! I'm a designer based in Denver, CO specializing in web and mobile app design. On the side, I also create illustrations and comics.</p>
-                <p>Want to chat? <a href='mailto:paul@sudodigital.com'>Drop me a line</a>.</p>
+                <p>Want to chat? <a className='lin-grad' href='mailto:paul@sudodigital.com'>Drop me a line</a>.</p>
                 <p>
-                  <Link to='/about'>Learn more about Paul</Link>
+                  <Link className='lin-grad' to='/about'>Learn more about Paul</Link>
                 </p>
 
                 <div className='flex port'>

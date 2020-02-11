@@ -27,7 +27,7 @@ class About extends React.Component {
             <div className='col-md-8 col-xs-12 p-b-1 p-l-xs-2'>
               <h1 className='zing'>hey there!</h1>
               <p>I'm Paul, a designer, and developer living in Denver, CO. I specialize in UX design for web and mobile applications but have a also have extensive experience in visual and animation design. I also love UX research and learning more about how to to make technology products improve the lives of users.</p>
-              <p>Outside of my design work, I'm an avid cyclist and can typically be found on one of my (too many) bikes, or drawing <Link to='/illustrations'>illustrations</Link>.</p>
+              <p>Outside of my design work, I'm an avid cyclist and can typically be found on one of my (too many) bikes, or drawing <Link className='lin-grad' to='/illustrations'>illustrations</Link>.</p>
             </div>
           </div>
 
@@ -47,13 +47,13 @@ class About extends React.Component {
             <div className='col-md-6 col-xs-12 text-left'>
               <p>I've made two (small) book contributions. Both books discuss behavioral psychology and how to nurture user engagement:</p>
               <p><a
-                className='book-link'
+                className='book-link lin-grad'
                 target='_blank'
                 rel='noopener noreferrer'
                 href='https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788/'>
                 Hooked</a> by Nir Eyal</p>
               <p><a
-                className='book-link'
+                className='book-link lin-grad'
                 target='_blank'
                 rel='noopener noreferrer'
                 href='https://www.amazon.com/Designing-Behavior-Change-Psychology-Behavioral/dp/1449367623'>
