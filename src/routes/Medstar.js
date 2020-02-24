@@ -8,7 +8,6 @@ import ReactTooltip from 'react-tooltip';
 import MedStarFull from '../images/medstar/medstar-full.png';
 import MedStarMap from '../images/medstar/medstar-map.png';
 import MedStarCTA from '../images/medstar/med-cta.png';
-import PanaMock3 from '../images/pana/p-mock-3.png';
 
 class Medstar extends React.Component {
   render() {

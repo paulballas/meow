@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import Suggest from '../components/Suggest';
 import Space from '../components/Space';
 import ImgZoom from '../components/ImgZoom';
-import ReactTooltip from 'react-tooltip';
 
 import ills from '../images/illustrations.json'
 

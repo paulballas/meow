@@ -11,7 +11,6 @@ import ClassScout from '../images/home/classscout.mp4'
 import Class1 from '../images/class/class-1.png';
 import Class2 from '../images/class/class-2.png';
 import Class3 from '../images/class/class-3.png';
-import ClassWeb from '../images/class/cs-web.png';
 
 class Class extends React.Component {
   constructor(props) {

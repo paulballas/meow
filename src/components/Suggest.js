@@ -7,7 +7,6 @@ import IconMedstar from '../images/icons/icon-medstar.svg'
 import IconUsac from '../images/icons/icon-usac.svg'
 import IconOdc from '../images/icons/icon-odc.svg'
 import IconClass from '../images/icons/icon-class.svg'
-import IconDg from '../images/icons/icon-dg.svg'
 import IconIll from '../images/icons/icon-illustrations.svg'
 
 const projects = [

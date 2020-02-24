@@ -9,6 +9,7 @@ class ImgZoom extends React.Component {
             <div className='col-xs-12'>
               <div className='modal-content animated fadeInUp'>
                 <img
+                  alt='name'
                   className={this.props.wideZoom? 'wide-zoom' : null}
                   src={this.props.img}
                   />
