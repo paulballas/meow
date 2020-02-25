@@ -58,7 +58,8 @@ class Modal extends React.Component {
                       data-tip='Close Modal'
                     />
                   </div>
-                  <p>Oracle has asked that I do not allow public access to my design work there. Sorry <span role='img' aria-label='sad face'>😐</span></p>
+                  <p>Oracle has asked that I do not allow public access to my design work for the company. Sorry <span role='img' aria-label='sad face'>😐</span></p>
+                  <p>If you were provided with a password to view my work for Oracle, please enter it below:</p>
                   { this.renderPasswordError() }
                   <label>Password</label>
                   <form onSubmit={this.handleSubmit}>
