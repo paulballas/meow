@@ -26,8 +26,9 @@ class About extends React.Component {
             </div>
             <div className='col-md-8 col-xs-12 p-b-1 p-l-xs-2'>
               <h1 className='zing'>hey there!</h1>
-              <p>I'm Paul, a designer, and developer living in Denver, CO. I specialize in UX design for web and mobile applications but have a also have extensive experience in visual and animation design. I also love UX research and learning more about how to to make technology products improve the lives of users.</p>
-              <p>Outside of my design work, I'm an avid cyclist and can typically be found on one of my (too many) bikes, or drawing <Link className='lin-grad' to='/illustrations'>illustrations</Link>.</p>
+              <p>Hey there, I'm Paul. My focus is on creating an amazing user experience for web and mobile applications. I strive to design with purpose and intentionality... and when that fails, rely on my decade of experience working with Fortune 500 and government clients.</p>
+
+              <p>Outside of work I can typically be found on my bike, hiking with my wife and dog, or <Link className='lin-grad' to='/illustrations'>drawing something</Link>.</p>              
             </div>
           </div>
 
