@@ -1,0 +1,49 @@
+@keyframes fromTop
+  0%
+    transform: translateY(-100%)
+  100%
+    transform: translateY(0)
+
+.alert
+  display: flex
+  padding: 1rem
+  animation: 1s ease fromTop
+  justify-content: space-between
+  align-items: center
+  transition: all 400ms
+  *
+    font-family: 'Metropolis', sans-serif
+    font-weight: 500
+    color: $white
+  p
+    font-size: 0.875rem
+    margin-bottom: 0
+  span.alert-title
+    font-size: 0.875rem
+    text-transform: uppercase
+    margin-bottom: 0
+    margin-right: 0.5rem
+    font-weight: 700
+  &.hide-alert
+    display: none
+  &.success
+    background: $success-3
+    border: 2px solid $success-4
+  &.error
+    background: $error-3
+    border: 2px solid $error-4
+  &.warning
+    background: $warning-3
+    border: 2px solid $warning-4
+  &.neutral
+    background: $gray-3
+    border: 2px solid $gray-4
+  &.fun
+    background: $purple-2
+    border: 2px solid $purple-4
+  svg
+    transition: all 400ms
+    &:hover
+      cursor: pointer
+      path
+        fill: $gray-1

@@ -16,10 +16,20 @@ import Class from './routes/Class'
 import Illustrations from './routes/Illustrations'
 import Odc from './routes/Odc'
 
+import Buttons from './routes/Buttons'
+import Alerts from './routes/Alerts'
+import Cards from './routes/Cards'
+import Forms from './routes/Forms'
+
 function App() {
   return (
     <Router onUpdate={ScrollToTop} history={createBrowserHistory()}>
       <ScrollToTop>
+        <Route path="/alerts" exact component={Alerts} />
+        <Route path="/buttons" exact component={Buttons} />
+        <Route path="/cards" exact component={Cards} />
+        <Route path="/forms" exact component={Forms} />
+
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/pana" exact component={Pana} />

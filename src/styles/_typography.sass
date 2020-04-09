@@ -2,38 +2,160 @@
   font-family: Zing
   src: url('./ZingRustDemo-Base.otf') format('OpenType')
 
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-Black.otf') format('OpenType')
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-BlackItalic.otf') format('OpenType')
+  font-weight: 900
+  font-style: italic
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-ExtraBold.otf') format('OpenType')
+  font-weight: 800
+  font-style: normal
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-ExtraBoldItalic.otf') format('OpenType')
+  font-weight: 800
+  font-style: italic
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-Bold.otf') format('OpenType')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-BoldItalic.otf') format('OpenType')
+  font-weight: 700
+  font-style: italic
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-SemiBold.otf') format('OpenType')
+  font-weight: 600
+  font-style: normal
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-SemiBoldItalic.otf') format('OpenType')
+  font-weight: 600
+  font-style: italic
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-Medium.otf') format('OpenType')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-MediumItalic.otf') format('OpenType')
+  font-weight: 500
+  font-style: italic
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-Regular.otf') format('OpenType')
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: Metropolis
+  src: url('./fonts/Metropolis-RegularItalic.otf') format('OpenType')
+  font-weight: 400
+  font-style: italic
+
+@font-face
+  font-family: Arvo
+  src: url('./fonts/Arvo-Bold.ttf') format('OpenType')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: Arvo
+  src: url('./fonts/Arvo-BoldItalic.ttf') format('OpenType')
+  font-weight: 700
+  font-style: italic
+
+@font-face
+  font-family: Arvo
+  src: url('./fonts/Arvo-Regular.ttf') format('OpenType')
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: Arvo
+  src: url('./fonts/Arvo-Italic.ttf') format('OpenType')
+  font-weight: 400
+  font-style: italic
+
+@font-face
+  font-family: Fira Mono
+  src: url('./fonts/FiraMono-Regular.ttf') format('TrueType')
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: Fira Mono
+  src: url('./fonts/FiraMono-Medium.ttf') format('TrueType')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: Fira Mono
+  src: url('./fonts/FiraMono-Bold.ttf') format('TrueType')
+  font-weight: 700
+  font-style: normal
+
 
 h1, h2, h3, h4, h5, h6, p, a, li, span, b, label
   color: $whale-2
-  font-family: Georgia, serif
+  font-family: 'Metropolis'
   line-height: 1.3
   color: $whale-4
   margin-top: 0
   margin-bottom: 1rem
-  &.super
-    font-size: 3rem
+
+@mixin font-default($size, $weight)
+  font-size: $size
+  font-weight: $weight
+  line-height: 1.3
+  color: $whale-4
+  margin-top: 0
+  margin-bottom: 1rem
+
+p, li
+  @include font-default(1rem, 500)
+
+h1
+  @include font-default(3.75rem, 900)
+
+h3
+  @include font-default(1.5rem, 600)
+
+button
+  font-family: 'Metropolis'
+  font-weight: 800
+  text-transform: uppercase
 
 label
-  font-family: 'Zing'
+  font-family: 'Arvo'
+  font-weight: 400
   font-size: 1.25rem
   display: block
   margin-bottom: 0.5rem
 
 ul
   padding-left: 1rem
-
-p, li
-  font-size: 1.25rem
-  &.large
-    font-size: 1.5rem
-  &.bold
-    font-weight: 700
-  &.italic
-    font-style: italic
-  &.emphasize
-    &,*
-      color: $pink-4
-      font-weight: 700
 
 .zing
   font-family: 'Zing', sans-serif
@@ -53,7 +175,7 @@ a
 
 a.lin-grad
   transition: all 300ms ease
-  background: linear-gradient(to right, $blue-1 50%, $pink-2 50%)
+  background: linear-gradient(to right, $blue-1 50%, $purple-2 50%)
   background-size: 200% 100%
   background-position: left bottom
   &:hover

@@ -1,15 +1,13 @@
 .container
   margin-right: auto
   margin-left: auto
-
-.container-fluid
-  margin-right: auto
-  margin-left: auto
-  padding-right: 1rem
-  padding-left: 1rem
-  @media screen and (min-width: 752px)
-    padding-right: 3rem
-    padding-left: 3rem
+  padding: 3rem
+  &.lg
+    max-width: 60rem
+  &.md
+    max-width: 40rem
+  &.sm
+    max-width: 20rem
 
 .row
   box-sizing: border-box
@@ -210,6 +208,24 @@
       margin-top: 2em
     .m-t-3-#{$s}
       margin-top: 3em
+
+    .m-r-0-#{$s}
+      margin-right: 0
+    .m-r-1-#{$s}
+      margin-right: 1em
+    .m-r-2-#{$s}
+      margin-right: 2em
+    .m-r-3-#{$s}
+      margin-right: 3em
+
+    .m-l-0-#{$s}
+      margin-left: 0
+    .m-l-1-#{$s}
+      margin-left: 1em
+    .m-l-2-#{$s}
+      margin-left: 2em
+    .m-l-3-#{$s}
+      margin-left: 3em
 
     .p-l-0-#{$s}
       padding-left: 0

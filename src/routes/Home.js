@@ -13,7 +13,6 @@ import Modal from '../components/Modal';
 import MedStar from  '../images/home/medstar-wise.png'
 import Usac from  '../images/home/usac.png'
 import Odc from  '../images/home/odc.png'
-import Illustrations from '../images/home/pink-bear.png'
 import PhoneClip from '../images/home/iphone-clip.png'
 import VideoPana from '../images/home/pana-video.mp4'
 import ClassScout from '../images/home/classscout.mp4'
@@ -128,7 +127,7 @@ class Home extends React.Component {
                     {this.state.activeHover === 'pana'? this.projectFooter('Pana - seamless business travel') : null}
                   </Link>
 
-                  <a                    
+                  <a
                     onClick={ () => this.setModal(true) }
                     className='proj proj--b'
                     onMouseEnter={() => this.setState({activeHover: 'odc'})}
@@ -231,7 +230,6 @@ class Home extends React.Component {
                     className='proj proj--f'
                     onMouseEnter={() => this.setState({activeHover: 'illustrations'})}
                     onMouseLeave={() => this.setState({activeHover: !this.state.activeHover})}>
-                    <img src={Illustrations} alt='Illustrations' />
 
                     {
                       this.state.activeHover === 'illustrations'?
