@@ -15,6 +15,7 @@ class Icon extends React.Component {
         if (this.props.name === icon.name) {
           return (
             <svg
+              onClick={this.props.onClick}
               key={icon.name}
               alt={icon.name}
               className={iconClasses}

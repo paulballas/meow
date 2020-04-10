@@ -1,0 +1,26 @@
+.dropdown
+  position: relative
+  display: block
+  @media screen and (min-width: 752px)
+    display: inline-block
+  .dropdown-list
+    display: none
+    position: absolute
+    background: $white
+    width: 100%
+    transition: all 300ms
+    &.active
+      display: block
+    .list-item
+      padding: 0.5rem
+      border-top: 2px solid $gray-1
+      border-right: 2px solid $gray-1
+      border-left: 2px solid $gray-1
+      transition: all 300ms
+      color: $text-color
+      &:last-child
+        border-bottom: 2px solid $gray-1
+      &:hover
+        background: $gray-1
+        cursor: pointer
+        color: $whale-4

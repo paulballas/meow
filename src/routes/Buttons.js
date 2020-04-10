@@ -84,6 +84,29 @@ class Buttons extends React.Component {
           outlined={true} />
         <Space h={2}/>
 
+        <h3>Icon</h3>
+        <Button
+          data='action!'
+          color='primary'
+          margin='m-r-1-xs'
+          icon='ChevronDown' />
+        <Button
+          data='action!'
+          color='secondary'
+          margin='m-r-1-xs'
+          icon='ChevronDown' />
+        <Button
+          data='action!'
+          color='tertiary'
+          margin='m-r-1-xs'
+          icon='ChevronDown' />
+        <Button
+          data='action!'
+          color='quaternary'
+          margin={false}
+          icon='ChevronDown' />
+        <Space h={2}/>
+
         <h3>Large</h3>
         <Button
           data='action!'

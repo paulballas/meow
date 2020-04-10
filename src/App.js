@@ -19,7 +19,9 @@ import Odc from './routes/Odc'
 import Buttons from './routes/Buttons'
 import Alerts from './routes/Alerts'
 import Cards from './routes/Cards'
+import Dropdowns from './routes/Dropdowns'
 import Forms from './routes/Forms'
+import Modals from './routes/Modals'
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
         <Route path="/alerts" exact component={Alerts} />
         <Route path="/buttons" exact component={Buttons} />
         <Route path="/cards" exact component={Cards} />
+        <Route path="/dropdowns" exact component={Dropdowns} />
         <Route path="/forms" exact component={Forms} />
+        <Route path="/modals" exact component={Modals} />
 
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />

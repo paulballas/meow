@@ -11,5 +11,6 @@ Meow is a responsive grid and component library that is framework agnostic and 1
 - Alerts
 - Buttons
 - Cards
-- Form inputs
 - Controls
+- Form inputs
+- Modals

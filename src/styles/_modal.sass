@@ -5,11 +5,13 @@
   right: 0
   bottom: 0
   left: 0
-  background: rgba($purple-4, 0.6)
+  background: rgba($secondary-color, 0.6)
   z-index: 5000
   overflow-y: auto
   transition: all 400ms
-  padding: 3rem
+  padding: 0
+  @media screen and (min-width: 752px)
+    padding: 3rem
   .modal-container
     overflow-y: visible
     max-height: 100vh
@@ -32,12 +34,9 @@
             width: 70%
       .modal-body
         padding: 1rem
-        background: #FFF
+        background: $white
         border-radius: 4px
         position: relative
-        .close-modal
-          height: 1.25rem
-          width: auto
-          margin: 0
+        .icon          
           &:hover
-            cursor: pointer           
+            cursor: pointer

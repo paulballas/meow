@@ -1,7 +1,10 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import Icon from './Icon'
 
 class Button extends React.Component {
+
+
   render() {
     const btnClasses = classNames(
       'btn',
@@ -21,6 +24,15 @@ class Button extends React.Component {
         className={btnClasses}
         >
         {this.props.data}
+        {
+          this.props.icon?
+          <Icon
+            name={this.props.icon}
+            iconClass='sm white'
+            label={this.props.icon}
+          />
+        :null
+        }
       </button>
     )
   }
