@@ -1,17 +1,15 @@
 import React from 'react';
 import SideBar from './SideBar';
-import Content from './Content';
 
 class MeowHome extends React.Component {
   render() {
     return (
-      <div className='container full gray-bg'>
+      <div className='container gray-bg'>
         <div className='row'>
-          <div className='col-md-2 col-xs-12'>
-            <SideBar />
-          </div>
-          <div className='col-md-10 col-xs-12'>
-            <Content />
+          <div className='col-xs-12'>
+            <h1 className='title'>Meow!</h1>
+            <div className='sub-title-line' />
+            <h3>Meow is a responsive grid and component library that is JS framework agnostic and 100% free.</h3>
           </div>
         </div>
       </div>
