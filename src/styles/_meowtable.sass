@@ -1,0 +1,49 @@
+.meow-table
+  display: block
+  &.x-scroll
+    overflow-x: scroll
+    .meow-tr
+      min-width: 50rem
+  &.single-row
+    .meow-tr
+      margin-bottom: -2px
+      .meow-th,
+      .meow-td,
+        border-top: 2px solid $neutral-1
+        border-bottom: 2px solid $neutral-1
+        border-left: none
+        border-right: none
+        &:first-child
+          border-left: 2px solid $neutral-1
+        &:last-child
+          border-right: 2px solid $neutral-1
+  .meow-tr
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &:nth-child(even)
+      background: lighten($neutral-1, 8%)
+    .meow-th,
+    .meow-td
+      border: 1px solid $neutral-1
+      display: block
+      width: 100%
+      padding: 0.875rem
+      box-sizing: border-box
+    .meow-th
+      background: $blue-3
+      font-weight: 700
+      color: $white
+      &:hover
+        cursor: pointer
+        color: $neutral-1
+        .icon path
+          fill: $neutral-1
+      .icon
+        display: inline-block
+        vertical-align: text-bottom
+        margin-left: 0.25rem
+        min-height: 1.125rem
+    .meow-td
+      font-weight: 500

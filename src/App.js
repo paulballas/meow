@@ -13,7 +13,6 @@ import Pana from './routes/Pana'
 import Medstar from './routes/Medstar'
 import Usac from './routes/Usac'
 import Class from './routes/Class'
-import Illustrations from './routes/Illustrations'
 import Odc from './routes/Odc'
 
 import Buttons from './routes/Buttons'
@@ -22,6 +21,7 @@ import Cards from './routes/Cards'
 import Dropdowns from './routes/Dropdowns'
 import Forms from './routes/Forms'
 import Modals from './routes/Modals'
+import Tables from './routes/Tables'
 
 function App() {
   return (
@@ -33,6 +33,7 @@ function App() {
         <Route path="/dropdowns" exact component={Dropdowns} />
         <Route path="/forms" exact component={Forms} />
         <Route path="/modals" exact component={Modals} />
+        <Route path="/tables" exact component={Tables} />
 
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
@@ -41,7 +42,6 @@ function App() {
         <Route path="/medstar" exact component={Medstar} />
         <Route path="/usac" exact component={Usac} />
         <Route path="/class-scout" exact component={Class} />
-        <Route path="/illustrations" exact component={Illustrations} />
       </ScrollToTop>
     </Router>
   );
