@@ -21,6 +21,7 @@ import Cards from './routes/Cards'
 import Dropdowns from './routes/Dropdowns'
 import Forms from './routes/Forms'
 import Modals from './routes/Modals'
+import Pagination from './routes/Pagination'
 import Tables from './routes/Tables'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/dropdowns" exact component={Dropdowns} />
         <Route path="/forms" exact component={Forms} />
         <Route path="/modals" exact component={Modals} />
+        <Route path="/pagination" exact component={Pagination} />
         <Route path="/tables" exact component={Tables} />
 
         <Route path="/" exact component={Home} />
