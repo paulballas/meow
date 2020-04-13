@@ -1,5 +1,5 @@
 ### MEOW!
-Meow is a responsive grid and component library that is framework agnostic and 100% free.
+Meow is a responsive grid and component library. Framework agnostic and 100% free.
 
 ## Grid
 - Responsive

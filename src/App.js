@@ -7,14 +7,7 @@ import {
 } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop'
 
-import Home from './routes/Home'
-import About from './routes/About'
-import Pana from './routes/Pana'
-import Medstar from './routes/Medstar'
-import Usac from './routes/Usac'
-import Class from './routes/Class'
-import Odc from './routes/Odc'
-
+import MeowHome from './routes/MeowHome'
 import Buttons from './routes/Buttons'
 import Alerts from './routes/Alerts'
 import Cards from './routes/Cards'
@@ -28,6 +21,8 @@ function App() {
   return (
     <Router onUpdate={ScrollToTop} history={createBrowserHistory()}>
       <ScrollToTop>
+        <Route path="/" exact component={MeowHome} />
+
         <Route path="/alerts" exact component={Alerts} />
         <Route path="/buttons" exact component={Buttons} />
         <Route path="/cards" exact component={Cards} />
@@ -36,14 +31,6 @@ function App() {
         <Route path="/modals" exact component={Modals} />
         <Route path="/pagination" exact component={Pagination} />
         <Route path="/tables" exact component={Tables} />
-
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
-        <Route path="/pana" exact component={Pana} />
-        <Route path="/odc" component={Odc} />
-        <Route path="/medstar" exact component={Medstar} />
-        <Route path="/usac" exact component={Usac} />
-        <Route path="/class-scout" exact component={Class} />
       </ScrollToTop>
     </Router>
   );
