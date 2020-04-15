@@ -5,9 +5,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop'
 
 import SideBar from './routes/SideBar';
+import MeowComponents from './routes/MeowComponents';
 import MeowHome from './routes/MeowHome'
-import Buttons from './routes/Buttons'
+
 import Alerts from './routes/Alerts'
+import Buttons from './routes/Buttons'
 import Cards from './routes/Cards'
 import Dropdowns from './routes/Dropdowns'
 import Forms from './routes/Forms'
@@ -22,12 +24,14 @@ function App() {
 
         <div className='container full gray-bg'>
           <div className='row'>
-            <div className='col-md-2 col-xs-12'>
+            <div className='col-md-3 col-xs-12'>
               <SideBar />
             </div>
-            <div className='col-md-10 col-xs-12'>
+            <div className='col-md-9 col-xs-12'>
               <Route path="/" exact component={MeowHome} />
-              <Route path="/alerts" exact component={Alerts} />
+              <Route path="/components" exact component={MeowComponents} />
+
+              <Route path="/components/alerts" exact component={Alerts} />
               <Route path="/buttons" exact component={Buttons} />
               <Route path="/cards" exact component={Cards} />
               <Route path="/dropdowns" exact component={Dropdowns} />

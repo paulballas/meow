@@ -25,7 +25,7 @@ const navLinks = (
   <div>
     <NavLink
       className='nav-link'
-      exact to="/alerts">alerts
+      exact to="/components/alerts">alerts
     </NavLink>
     <NavLink
       className='nav-link'
@@ -91,27 +91,37 @@ class SideBar extends React.Component {
           />
           home
         </NavLink>
-        <button
+        <NavLink
+          to='/basics'
           onClick={ () => this.setState({activeTab: 'basic'}) }
-          className={activeTab === 'basic'? 'nav-link tab active-tab': 'nav-link tab'}>
+          className={
+            activeTab === 'basic'?
+            'nav-link tab active-tab'
+            : 'nav-link tab'
+          }>
           <Icon
             name='Circle'
             iconClass='md dark'
             label='Meow Basics Icon'
           />
           basics
-        </button>
+        </NavLink>
         {this.renderLinks('basic')}
-        <button
+        <NavLink
+          to='/components'
           onClick={ () => this.setState({activeTab: 'components'}) }
-          className={activeTab === 'components'? 'nav-link tab active-tab': 'nav-link tab'}>
+          className={
+            activeTab === 'components'?
+            'nav-link tab active-tab'
+            : 'nav-link tab'
+          }>
           <Icon
             name='Hexagon'
             iconClass='md dark'
             label='Meow Components Icon'
           />
           components
-        </button>
+        </NavLink>
         { this.renderLinks('components') }
       </div>
     )
