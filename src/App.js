@@ -8,6 +8,8 @@ import SideBar from './routes/SideBar';
 import MeowComponents from './routes/MeowComponents';
 import MeowHome from './routes/MeowHome'
 
+import Grid from './routes/Grid'
+
 import Alerts from './routes/Alerts'
 import Buttons from './routes/Buttons'
 import Cards from './routes/Cards'
@@ -24,22 +26,19 @@ function App() {
 
         <div className='container full gray-bg'>
           <div className='row'>
-            <div className='col-md-3 col-xs-12'>
-              <SideBar />
-            </div>
-            <div className='col-md-9 col-xs-12'>
-              <Route path="/" exact component={MeowHome} />
-              <Route path="/components" exact component={MeowComponents} />
-
-              <Route path="/components/alerts" exact component={Alerts} />
-              <Route path="/buttons" exact component={Buttons} />
-              <Route path="/cards" exact component={Cards} />
-              <Route path="/dropdowns" exact component={Dropdowns} />
-              <Route path="/forms" exact component={Forms} />
-              <Route path="/modals" exact component={Modals} />
-              <Route path="/pagination" exact component={Pagination} />
-              <Route path="/tables" exact component={Tables} />
-            </div>
+            <SideBar />
+            
+            <Route path="/" exact component={MeowHome} />
+            <Route path="/components" exact component={MeowComponents} />
+            <Route path="/basics/grid" exact component={Grid} />
+            <Route path="/components/alerts" exact component={Alerts} />
+            <Route path="/buttons" exact component={Buttons} />
+            <Route path="/cards" exact component={Cards} />
+            <Route path="/dropdowns" exact component={Dropdowns} />
+            <Route path="/forms" exact component={Forms} />
+            <Route path="/modals" exact component={Modals} />
+            <Route path="/pagination" exact component={Pagination} />
+            <Route path="/tables" exact component={Tables} />
           </div>
         </div>
 

@@ -6,7 +6,7 @@ const basicsLinks = (
   <div>
     <NavLink
       className='nav-link'
-      exact to="/grid">grid
+      exact to="/basics/grid">grid
     </NavLink>
 
     <NavLink
@@ -79,50 +79,60 @@ class SideBar extends React.Component {
   render() {
     const { activeTab } = this.state
     return (
-      <div className='sidebar'>
-        <NavLink
-          onClick={ () => this.setState({activeTab: 'home'}) }
-          className='nav-link'
-          exact to="/">
-          <Icon
-            name='Square'
-            iconClass='md dark'
-            label='Meow Home Icon'
-          />
-          home
-        </NavLink>
-        <NavLink
-          to='/basics'
-          onClick={ () => this.setState({activeTab: 'basic'}) }
-          className={
-            activeTab === 'basic'?
-            'nav-link tab active-tab'
-            : 'nav-link tab'
-          }>
-          <Icon
-            name='Circle'
-            iconClass='md dark'
-            label='Meow Basics Icon'
-          />
-          basics
-        </NavLink>
-        {this.renderLinks('basic')}
-        <NavLink
-          to='/components'
-          onClick={ () => this.setState({activeTab: 'components'}) }
-          className={
-            activeTab === 'components'?
-            'nav-link tab active-tab'
-            : 'nav-link tab'
-          }>
-          <Icon
-            name='Hexagon'
-            iconClass='md dark'
-            label='Meow Components Icon'
-          />
-          components
-        </NavLink>
-        { this.renderLinks('components') }
+      <div className='col-md-3 col-xs-12 bg--sidebar'>
+        <div className='sidebar'>
+          <NavLink
+            onClick={ () => this.setState({activeTab: 'home'}) }
+            className='nav-link'
+            exact to="/">
+            <Icon
+              name='Square'
+              iconClass='md dark'
+              label='Meow Home Icon'
+            />
+            home
+          </NavLink>
+          <NavLink
+            to='/basics'
+            onClick={ () => this.setState({activeTab: 'basic'}) }
+            className={
+              activeTab === 'basic'?
+              'nav-link tab active-tab'
+              : 'nav-link tab'
+            }>
+            <Icon
+              name='Circle'
+              iconClass='md dark'
+              label='Meow Basics Icon'
+            />
+            basics
+          </NavLink>
+          {this.renderLinks('basic')}
+          <NavLink
+            to='/components'
+            onClick={ () => this.setState({activeTab: 'components'}) }
+            className={
+              activeTab === 'components'?
+              'nav-link tab active-tab'
+              : 'nav-link tab'
+            }>
+            <Icon
+              name='Hexagon'
+              iconClass='md dark'
+              label='Meow Components Icon'
+            />
+            components
+          </NavLink>
+          { this.renderLinks('components') }
+          <button className='nav-link'>
+            <Icon
+              name='Download'
+              iconClass='md download'
+              label='Meow Components Icon'
+            />
+            download styles
+          </button>
+        </div>
       </div>
     )
   }

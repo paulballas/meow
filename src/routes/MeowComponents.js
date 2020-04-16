@@ -8,7 +8,7 @@ class MeowComponents extends React.Component {
           <div className='col-xs-12'>
             <div className='sub-title-line' />
             <h2 className='title'>Components</h2>
-            <h5 className='type-serif'>Designer approved components, ready to go.</h5>
+            <h5>Designer approved components, ready to go.</h5>
           </div>
         </div>
       </div>
