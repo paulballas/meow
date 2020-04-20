@@ -1,0 +1,58 @@
+{
+  "colors": {
+    "eggplant": [
+      {
+        "color": "eggplant-1",
+        "name": "eggplant-1"
+      },
+      {
+        "color": "eggplant-2",
+        "name": "eggplant-2"
+      },
+      {
+        "color": "eggplant-3",
+        "name": "eggplant-3"
+      },
+      {
+        "color": "eggplant-4",
+        "name": "eggplant-4"
+      }
+    ],
+    "razz": [
+      {
+        "color": "razz-1",
+        "name": "razz-1"
+      },
+      {
+        "color": "razz-2",
+        "name": "razz-2"
+      },
+      {
+        "color": "razz-3",
+        "name": "razz-3"
+      },
+      {
+        "color": "razz-4",
+        "name": "razz-4"
+      }
+    ],
+    "lily": [
+      {
+        "color": "lily-1",
+        "name": "lily-1"
+      },
+      {
+        "color": "lily-2",
+        "name": "lily-2"
+      },
+      {
+        "color": "lily-3",
+        "name": "lily-3"
+      },
+      {
+        "color": "lily-4",
+        "name": "lily-4"
+      }
+    ]
+  }
+}

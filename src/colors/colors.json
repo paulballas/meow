@@ -1,0 +1,148 @@
+{
+  "colors": {
+    "eggplant": [
+      {
+        "vari": "eggplant-1",
+        "hex": "#A4198B"
+      },
+      {
+        "vari": "eggplant-2",
+        "hex": "#8F0173"
+      },
+      {
+        "vari": "eggplant-3",
+        "hex": "#800065"
+      },
+      {
+        "vari": "eggplant-4",
+        "hex": "#700057"
+      }
+    ],
+    "razz": [
+      {
+        "vari": "razz-1",
+        "hex": "#FF4F93"
+      },
+      {
+        "vari": "razz-2",
+        "hex": "#FF1D6D"
+      },
+      {
+        "vari": "razz-3",
+        "hex": "#E7004D"
+      },
+      {
+        "vari": "razz-4",
+        "hex": "#C9003E"
+      }
+    ],
+    "lily": [
+      {
+        "vari": "lily-1",
+        "hex": "#E8F9FF"
+      },
+      {
+        "vari": "lily-2",
+        "hex": "#CFE7EF"
+      },
+      {
+        "vari": "lily-3",
+        "hex": "#B7D5E0"
+      },
+      {
+        "vari": "lily-4",
+        "hex": "#97BCCC"
+      }
+    ],
+    "gigas": [
+      {
+        "vari": "gigas-1",
+        "hex": "#7D7DD5"
+      },
+      {
+        "vari": "gigas-2",
+        "hex": "#5757B4"
+      },
+      {
+        "vari": "gigas-3",
+        "hex": "#3F3F98"
+      },
+      {
+        "vari": "gigas-4",
+        "hex": "#2E2E84"
+      }
+    ],
+    "wood": [
+      {
+        "vari": "wood-1",
+        "hex": "#80737F"
+      },
+      {
+        "vari": "wood-2",
+        "hex": "#6B5F6A"
+      },
+      {
+        "vari": "wood-3",
+        "hex": "#5C505B"
+      },
+      {
+        "vari": "wood-4",
+        "hex": "#4C424B"
+      }
+    ],
+    "salt": [
+      {
+        "vari": "salt-1",
+        "hex": "#FFFEF4"
+      },
+      {
+        "vari": "salt-2",
+        "hex": "#F0EED8"
+      },
+      {
+        "vari": "salt-3",
+        "hex": "#CDCBAF"
+      },
+      {
+        "vari": "salt-4",
+        "hex": "#ACA886"
+      }
+    ],
+    "pomegranate": [
+      {
+        "vari": "pomegranate-1",
+        "hex": "#FC6C3A"
+      },
+      {
+        "vari": "pomegranate-2",
+        "hex": "#F14A17"
+      },
+      {
+        "vari": "pomegranate-3",
+        "hex": "#D53103"
+      },
+      {
+        "vari": "pomegranate-4",
+        "hex": "#B72703"
+      }
+    ],
+    "currant": [
+      {
+        "vari": "currant-1",
+        "hex": "#52465C"
+      },
+      {
+        "vari": "currant-2",
+        "hex": "#403549"
+      },
+      {
+        "vari": "currant-3",
+        "hex": "#33293B"
+      },
+      {
+        "vari": "currant-4",
+        "hex": "#2A2132"
+      }
+    ]
+  }
+}

@@ -13,6 +13,18 @@
     margin: 0
     font-size: 0.75rem
 
+code
+  font-size: 1rem
+  color: $razz-4
+  font-weight: 500
+  background: $lily-2
+  padding: 2px
+  &.inline
+    text-transform: lowercase
+    font-size: 0.875rem
+    margin-left: 0.25rem
+    vertical-align: text-bottom
+
 code[class*="language-"]
   display: block
   color: #f8f8f2
@@ -73,7 +85,7 @@ pre[class*="language-"]
     font-weight: 400
     letter-spacing: 1px
 
-\:not(pre) > code[class*="language-js"], pre[class*="language-js"]
+\:not(pre) > code[class*="language-"],pre[class*="language-"]
   background: #282C34
   padding: 1rem
   white-space: pre-wrap
@@ -123,3 +135,46 @@ pre[class*="language-"]
     font-style: italic
   &.entity
     cursor: help
+
+code[class*=" language-sass"]
+  .token
+    &.comment, &.prolog, &.doctype, &.cdata
+      color: slategray
+    &.punctuation
+      color: #CBCFD7
+      letter-spacing: 3px
+    &.namespace
+      opacity: .7
+
+    &.property, &.tag, &.constant, &.symbol, &.deleted
+      color: #f92672
+    &.boolean, &.number
+      color: #ae81ff
+    &.selector, &.attr-name, &.string, &.char, &.builtin, &.inserted
+      color: #8DD45C
+    &.operator, &.entity, &.url
+      color: #E289FF
+  .language-css .token.string, .style .token.string
+    color: #f8f8f2
+  .token
+    &.plain-text
+      color: #CBCFD7
+    &.variable
+      color: #f92672
+    &.atrule, &.attr-value, &.function
+      color: $blue-1
+    &.class-name
+      color: #E06C75
+    &.keyword
+      color: #E289FF
+    &.regex
+      color: #fd971f
+    &.important
+      color: #fd971f
+      font-weight: bold
+    &.bold
+      font-weight: bold
+    &.italic
+      font-style: italic
+    &.entity
+      cursor: help

@@ -1,22 +1,25 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { matchPath, NavLink } from 'react-router-dom';
 import Icon from '../components/Icon'
 
 const basicsLinks = (
   <div>
+
+    <NavLink
+      className='nav-link'
+      exact to="/basics/colors">colors
+    </NavLink>
     <NavLink
       className='nav-link'
       exact to="/basics/grid">grid
     </NavLink>
-
     <NavLink
       className='nav-link'
       exact to="/spacing">spacing
     </NavLink>
-
     <NavLink
       className='nav-link'
-      exact to="/typography">typography
+      exact to="/basics/typography">typography
     </NavLink>
   </div>
 )
@@ -29,7 +32,7 @@ const navLinks = (
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/buttons">buttons
+      exact to="/components/buttons">buttons
     </NavLink>
     <NavLink
       className='nav-link'
@@ -78,8 +81,16 @@ class SideBar extends React.Component {
 
   render() {
     const { activeTab } = this.state
+    const match = matchPath("/basics/colors", {
+      path: "/basics/:id",
+      exact: true,
+      strict: false
+    });
+
     return (
       <div className='col-md-3 col-xs-12 bg--sidebar'>
+        <p>{match.path}</p>
+        <p>{match.url}</p>
         <div className='sidebar'>
           <NavLink
             onClick={ () => this.setState({activeTab: 'home'}) }

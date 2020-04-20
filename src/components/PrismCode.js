@@ -10,7 +10,7 @@ export class PrismCode extends React.Component {
       jsx: true
     }
   }
-  
+
   componentDidMount() {
     this.highlight()
   }
