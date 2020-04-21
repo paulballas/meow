@@ -46,7 +46,7 @@ class Dropdown extends React.Component {
         <Button
           onClick={ () => this.setState({activeList: !this.state.activeList}) }
           data='Cat Supplies'
-          color='primary'
+          type='primary'
           icon='ChevronDown'
         />
       <div className={dropClasses}>

@@ -39,7 +39,7 @@ class Type extends React.Component {
               </div>
 
               <div className='content-card'>
-                <p className='content-card-label'>anchors</p>
+                <p className='content-card-label'>links</p>
                 <a>a: Muddy water is best cleared...</a>
                 <a>a: by leaving it alone</a>
 

@@ -9,37 +9,38 @@
       margin-bottom: -2px
       .meow-th,
       .meow-td,
-        border-top: 2px solid $neutral-1
-        border-bottom: 2px solid $neutral-1
+        border-top: 2px solid $border-primary
+        border-bottom: 2px solid $border-primary
         border-left: none
         border-right: none
         &:first-child
-          border-left: 2px solid $neutral-1
+          border-left: 2px solid $border-primary
         &:last-child
-          border-right: 2px solid $neutral-1
+          border-right: 2px solid $border-primary
   .meow-tr
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
+    background: $salt-1
     &:nth-child(even)
-      background: lighten($neutral-1, 8%)
+      background: $white
     .meow-th,
     .meow-td
-      border: 1px solid $neutral-1
+      border: 1px solid $border-primary
       display: block
       width: 100%
       padding: 0.875rem
       box-sizing: border-box
     .meow-th
-      background: $blue-3
+      background: $background-active
       font-weight: 700
       color: $white
       &:hover
         cursor: pointer
-        color: $neutral-1
+        color: $background-secondary
         .icon path
-          fill: $neutral-1
+          fill: $background-secondary
       .icon
         display: inline-block
         vertical-align: text-bottom

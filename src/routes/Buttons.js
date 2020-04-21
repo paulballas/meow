@@ -11,7 +11,7 @@ const helloWorld = `renderThis = () => { return 'yay!'}`
 const btnCodeJsx = (
 `<Button
   data='action!'
-  color='primary'
+  type='primary'
   margin='m-r-1-xs'
   large={false}
 />`
@@ -27,152 +27,227 @@ class Buttons extends React.Component {
 //
   render() {
     return (
-      <div className='container'>
-        <div className='row'>
-          <div className='col-xs-12'>
-            <PrismCode
-              codeJsx={btnCodeJsx}
-              codeHtml={btnCodeHtml}
-              language='jsx'
-              file='Button.js'
-            />
+      <div className='col-md-9 col-xs-12 bg--inner'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-xs-12'>
+              <div className='sub-title-line' />
+              <h2 className='title'>Buttons</h2>
+              <h5>Don't push my button.</h5>
+            </div>
           </div>
+
+          <div className='row'>
+            <div className='col-xs-12'>
+              <PrismCode
+                codeJsx={btnCodeJsx}
+                codeHtml={btnCodeHtml}
+                language='jsx'
+                file='Button.js'
+              />
+            </div>
+          </div>
+
+          <div className='row'>
+            <div className='col-xs-12'>
+              <h4>Default</h4>
+              <div className='content-card'>
+                <Button
+                  data='action!'
+                  type='primary'
+                  margin='m-r-1-xs'
+                />
+                <Button
+                  data='action!'
+                  type='secondary'
+                  margin='m-r-1-xs'
+                />
+                <Button
+                  data='action!'
+                  type='tertiary'
+                  margin='m-r-1-xs'
+                />
+                <Button
+                  data='action!'
+                  type='warning'
+                  margin='m-r-1-xs'
+                />
+                <Button
+                  data='action!'
+                  type='danger'
+                  margin='m-r-1-xs'
+                />
+                <Button
+                  data='action!'
+                  type='fun'
+                />
+
+              </div>
+
+              <h4>Outlined</h4>
+              <div className='content-card'>
+                <Button
+                  data='action!'
+                  type='primary'
+                  margin='m-r-1-xs'
+                  outlined={true} />
+                <Button
+                  data='action!'
+                  type='secondary'
+                  margin='m-r-1-xs'
+                  outlined={true} />
+                <Button
+                  data='action!'
+                  type='tertiary'
+                  margin='m-r-1-xs'
+                  outlined={true} />
+                <Button
+                  data='action!'
+                  type='warning'
+                  margin='m-r-1-xs'
+                  outlined={true} />
+                <Button
+                  data='action!'
+                  type='danger'
+                  margin='m-r-1-xs'
+                  outlined={true} />
+                <Button
+                  data='action!'
+                  type='fun'
+                  outlined={true} />
+              </div>
+
+              <h4>Icon</h4>
+              <div className='content-card'>
+                <Button
+                  data='action!'
+                  type='primary'
+                  margin='m-r-1-xs'
+                  icon='ChevronDown' />
+                <Button
+                  data='action!'
+                  type='secondary'
+                  margin='m-r-1-xs'
+                  icon='ChevronDown' />
+                <Button
+                  data='action!'
+                  type='tertiary'
+                  margin='m-r-1-xs'
+                  icon='ChevronDown' />
+                <Button
+                  data='action!'
+                  type='warning'
+                  margin='m-r-1-xs'
+                  icon='ChevronDown' />
+                <Button
+                  data='action!'
+                  type='danger'
+                  margin='m-r-1-xs'
+                  icon='ChevronDown' />
+                <Button
+                  data='action!'
+                  type='fun'
+                  icon='ChevronDown' />
+              </div>
+
+
+              <h4>Large</h4>
+              <div className='content-card'>
+                <Button
+                  data='action!'
+                  type='primary'
+                  margin='m-r-1-xs'
+                  large={true} />
+                <Button
+                  data='action!'
+                  type='secondary'
+                  margin='m-r-1-xs'
+                  large={true} />
+                <Button
+                  data='action!'
+                  type='tertiary'
+                  margin='m-r-1-xs'
+                  large={true} />
+                <Button
+                  data='action!'
+                  type='warning'
+                  margin='m-r-1-xs'
+                  large={true} />
+                <Button
+                  data='action!'
+                  type='danger'
+                  margin='m-r-1-xs'
+                  large={true} />
+                <Button
+                  data='action!'
+                  type='fun'
+                  large={true} />
+
+              </div>
+              <h4>Small</h4>
+              <div className='content-card'>
+                <Button
+                  data='action!'
+                  type='primary'
+                  margin='m-r-1-xs'
+                  small={true} />
+                <Button
+                  data='action!'
+                  type='secondary'
+                  margin='m-r-1-xs'
+                  small={true} />
+                <Button
+                  data='action!'
+                  type='tertiary'
+                  margin='m-r-1-xs'
+                  small={true} />
+                <Button
+                  data='action!'
+                  type='warning'
+                  margin='m-r-1-xs'
+                  small={true} />
+                <Button
+                  data='action!'
+                  type='danger'
+                  margin='m-r-1-xs'
+                  small={true} />
+                <Button
+                  data='action!'
+                  type='fun'
+                  small={true} />
+              </div>
+
+              <h4>100% width</h4>
+              <div className='content-card'>
+                <Button
+                  data='action!'
+                  type='primary'
+                  full={true} />
+                <Button
+                  data='action!'
+                  type='secondary'
+                  full={true} />
+                <Button
+                  data='action!'
+                  type='tertiary'
+                  full={true} />
+                <Button
+                  data='action!'
+                  type='warning'
+                  full={true} />
+                <Button
+                  data='action!'
+                  type='danger'
+                  full={true} />
+                <Button
+                  data='action!'
+                  type='fun'
+                  full={true} />
+              </div>
+            </div>
+          </div>
+
         </div>
-        <h3>Default</h3>
-        <Button
-          data='action!'
-          color='primary'
-          margin='m-r-1-xs'
-          large={false} />
-        <Button
-          data='action!'
-          color='secondary'
-          margin='m-r-1-xs'
-          large={false} />
-        <Button
-          data='action!'
-          color='tertiary'
-          margin='m-r-1-xs'
-          large={false} />
-        <Button
-          data='action!'
-          color='quaternary'
-          margin={false}
-          large={false} />
-        <Space h={2}/>
-
-        <h3>Outlined</h3>
-        <Button
-          data='action!'
-          color='primary'
-          margin='m-r-1-xs'
-          outlined={true} />
-        <Button
-          data='action!'
-          color='secondary'
-          margin='m-r-1-xs'
-          outlined={true} />
-        <Button
-          data='action!'
-          color='tertiary'
-          margin='m-r-1-xs'
-          outlined={true} />
-        <Button
-          data='action!'
-          color='quaternary'
-          margin={false}
-          outlined={true} />
-        <Space h={2}/>
-
-        <h3>Icon</h3>
-        <Button
-          data='action!'
-          color='primary'
-          margin='m-r-1-xs'
-          icon='ChevronDown' />
-        <Button
-          data='action!'
-          color='secondary'
-          margin='m-r-1-xs'
-          icon='ChevronDown' />
-        <Button
-          data='action!'
-          color='tertiary'
-          margin='m-r-1-xs'
-          icon='ChevronDown' />
-        <Button
-          data='action!'
-          color='quaternary'
-          margin={false}
-          icon='ChevronDown' />
-        <Space h={2}/>
-
-        <h3>Large</h3>
-        <Button
-          data='action!'
-          color='primary'
-          margin='m-r-1-xs'
-          large={true} />
-        <Button
-          data='action!'
-          color='secondary'
-          margin='m-r-1-xs'
-          large={true} />
-        <Button
-          data='action!'
-          color='tertiary'
-          margin='m-r-1-xs'
-          large={true} />
-        <Button
-          data='action!'
-          color='quaternary'
-          margin={false} />
-        <Space h={2}/>
-
-        <h3>Small</h3>
-        <Button
-          data='action!'
-          color='primary'
-          margin='m-r-1-xs'
-          small={true} />
-        <Button
-          data='action!'
-          color='secondary'
-          margin='m-r-1-xs'
-          small={true} />
-        <Button
-          data='action!'
-          color='tertiary'
-          margin='m-r-1-xs'
-          small={true} />
-        <Button
-          data='action!'
-          color='quaternary'
-          margin={false}
-          small={true} />
-        <Space h={2}/>
-
-        <h3>Full Width</h3>
-        <Button
-          data='action!'
-          color='primary'
-          margin={false}
-          full={true} />
-        <Button
-          data='action!'
-          color='secondary'
-          margin={false}
-          full={true} />
-        <Button
-          data='action!'
-          color='tertiary'
-          margin={false}
-          full={true} />
-        <Button
-          data='action!'
-          color='quaternary'
-          margin={false}
-          full={true} />
       </div>
     )
   }

@@ -42,9 +42,15 @@ class Card extends React.Component {
       <p className='card-badge'>{this.props.badge}</p>
       :null
     )
+
+    const cardClasses = classNames(
+      'card',
+      this.props.margin
+    )
+
     const renderCard = (
       this.props.clickable?
-      <a className='card'>
+      <a className={cardClasses}>
         { this.renderImg() }
         {badge}
         <p className='card-title'>{this.props.title}</p>
@@ -52,7 +58,7 @@ class Card extends React.Component {
         { this.renderButton() }
       </a>
       :
-      <div className='card'>
+      <div className={cardClasses}>
         { this.renderImg() }
         {badge}
         <p className='card-title'>{this.props.title}</p>
@@ -61,7 +67,7 @@ class Card extends React.Component {
       </div>
     )
     return (
-      <div className='card'>
+      <div className={cardClasses}>
         { this.renderImg() }
         {badge}
         <p className='card-title'>{this.props.title}</p>

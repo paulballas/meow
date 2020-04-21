@@ -8,7 +8,7 @@ class Button extends React.Component {
   render() {
     const btnClasses = classNames(
       'btn',
-      this.props.color,
+      this.props.type,
       this.props.margin,
       {
         'outlined': this.props.outlined,

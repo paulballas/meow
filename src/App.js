@@ -21,6 +21,7 @@ import Buttons from './routes/Buttons'
 import Cards from './routes/Cards'
 import Dropdowns from './routes/Dropdowns'
 import Forms from './routes/Forms'
+import Lists from './routes/Lists'
 import Modals from './routes/Modals'
 import Pagination from './routes/Pagination'
 import Tables from './routes/Tables'
@@ -46,12 +47,13 @@ function App() {
             <Route path="/components" exact component={MeowComponents} />
             <Route path="/components/alerts" exact component={Alerts} />
             <Route path="/components/buttons" exact component={Buttons} />
-            <Route path="/cards" exact component={Cards} />
-            <Route path="/dropdowns" exact component={Dropdowns} />
-            <Route path="/forms" exact component={Forms} />
-            <Route path="/modals" exact component={Modals} />
-            <Route path="/pagination" exact component={Pagination} />
-            <Route path="/tables" exact component={Tables} />
+            <Route path="/components/cards" exact component={Cards} />
+            <Route path="/components/dropdowns" exact component={Dropdowns} />
+            <Route path="/components/forms" exact component={Forms} />
+            <Route path="/components/modals" exact component={Modals} />
+            <Route path="/components/lists" exact component={Lists} />
+            <Route path="/components/pagination" exact component={Pagination} />
+            <Route path="/components/tables" exact component={Tables} />
           </div>
         </div>
 

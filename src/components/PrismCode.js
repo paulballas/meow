@@ -29,15 +29,13 @@ export class PrismCode extends React.Component {
         <Button
           data='JSX'
           small={true}
-          color={this.state.jsx? 'primary': 'quaternary' }
-          margin={false}
+          type={this.state.jsx? 'primary': 'tertiary' }
           onClick={ () => this.setState({jsx: true}) }
         />
         <Button
           data='HTML'
           small={true}
-          color={this.state.jsx === false? 'primary': 'quaternary' }
-          margin={false}
+          type={this.state.jsx === false? 'primary': 'tertiary' }          
           onClick={ () => this.setState({jsx: !this.state.jsx}) }
         />
         <pre>

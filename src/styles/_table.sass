@@ -3,14 +3,14 @@
   &.single-row
     table tbody tr th,
     table tbody tr td
-      border-top: 2px solid $neutral-1
-      border-bottom: 2px solid $neutral-1
+      border-top: 2px solid $border-primary
+      border-bottom: 2px solid $border-primary
       border-left: none
       border-right: none
       &:first-child
-        border-left: 2px solid $neutral-1
+        border-left: 2px solid $border-primary
       &:last-child
-        border-right: 2px solid $neutral-1
+        border-right: 2px solid $border-primary
   table
     border-spacing: 0s
     width: 100%
@@ -20,17 +20,18 @@
       tr
         background: $white
         min-height: 8rem
+        background: $salt-1
         &:nth-child(even)
-          background: lighten($neutral-1, 8%)
+          background: $white
         &:first-child
-          background: $blue-3
+          background: $background-active
           th
             color: $white
             &:hover
               cursor: pointer
-              color: $neutral-1
+              color: $background-secondary
               .icon path
-                fill: $neutral-1
+                fill: $background-secondary
             .icon
               display: inline-block
               vertical-align: text-bottom
@@ -40,7 +41,7 @@
           text-align: left
           box-sizing: border-box
           padding: 0.875rem
-          border: 2px solid $neutral-1
+          border: 2px solid $border-primary
           min-width: 8rem
           min-height: 6rem
           overflow: hidden

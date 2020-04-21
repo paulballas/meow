@@ -37,27 +37,31 @@ const navLinks = (
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/cards">cards
+      exact to="/components/cards">cards
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/dropdowns">dropdowns
+      exact to="/components/dropdowns">dropdowns
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/forms">forms
+      exact to="/components/forms">forms
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/modals">modals
+      exact to="/components/lists">lists
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/pagination">pagination
+      exact to="/components/modals">modals
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/tables">tables
+      exact to="/components/pagination">pagination
+    </NavLink>
+    <NavLink
+      className='nav-link'
+      exact to="/components/tables">tables
     </NavLink>
   </div>
 )
@@ -84,10 +88,10 @@ class SideBar extends React.Component {
 
   render() {
     const { match, location, history } = this.props;
+    const forRef = <p>location: {location.pathname}</p>
 
     return (
-      <div className='col-md-3 col-xs-12 bg--sidebar'>
-        <p>location: {location.pathname}</p>
+      <div className='col-md-3 col-xs-12 bg--sidebar'>      
         <div className='sidebar'>
           <NavLink
             className='nav-link'

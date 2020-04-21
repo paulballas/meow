@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from './Icon'
 
-const pages = [1, 2, 3, 4, 4]
+const pages = [1, 2, 3, 4, 5]
 
 class Paginator extends React.Component {
   constructor(props) {

@@ -6,7 +6,7 @@
       cursor: pointer
       path
         transition: all 300ms
-        fill: $primary-color
+        fill: $background-active
     &:first-child
       margin-right: 0.5rem
       padding-top: 0.25rem
@@ -16,7 +16,7 @@
   .page
     font-family: 'Arvo'
     font-size: 0.875rem
-    color: $text-color
+    color: $text-primary
     display: flex
     align-items: center
     justify-content: center
@@ -24,14 +24,15 @@
     margin-right: 0.5rem
     width: 2.5rem
     height: 2.5rem
-    background: lighten($neutral-1, 5%)
-    border: 1px solid $neutral-1
+    background: $background-primary
+    border: 1px solid $border-primary
     transition: all 300ms
     &:hover
-      background: $neutral-1
+      background: $background-active
+      color: $white
       cursor: pointer
     &.active
-      background: $active-color
+      background: $background-active
       color: $white
       font-weight: 700
-      border-color: $active-border-color
+      border-color: $border-active

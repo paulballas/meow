@@ -19,57 +19,85 @@ button.btn
   &.full
     width: 100%
   &.primary
-    background: $primary-color
+    background: $btn-primary
     color: $white
     &:hover, &:active, &:focus
-      background: darken($primary-color, 10%)
+      background: darken($btn-primary, 10%)
       outline: none
     &.outlined
       background: transparent
-      border: 2px solid $primary-color
-      color: $primary-color
+      border: 2px solid $btn-primary
+      color: $btn-primary
       &:hover
         background: $primary-color
         color: $white
       &:hover
   &.secondary
-    background: $secondary-color
+    background: $btn-secondary
     color: $white
     &:hover, &:active, &:focus
-      background: darken($secondary-color, 10%)
+      background: darken($btn-secondary, 10%)
       outline: none
     &.outlined
       background: transparent
-      border: 2px solid $secondary-color
-      color: $secondary-color
+      border: 2px solid $btn-secondary
+      color: $btn-secondary
       &:hover
         background: $secondary-color
         color: $white
   &.tertiary
-    background: $tertiary-color
+    background: $btn-tertiary
     color: $white
     &:hover, &:active, &:focus
-      background: darken($tertiary-color, 10%)
+      background: darken($btn-tertiary, 10%)
       outline: none
     &.outlined
       background: transparent
-      border: 2px solid $tertiary-color
-      color: $tertiary-color
+      border: 2px solid $btn-tertiary
+      color: $btn-tertiary
       &:hover
         background: $tertiary-color
         color: $white
-  &.quaternary
-    background: $neutral-color
+  &.warning
+    background: $btn-warning
     color: $white
     &:hover, &:active, &:focus
-      background: darken($neutral-color, 10%)
+      background: darken($btn-warning, 10%)
       outline: none
     &.outlined
       background: transparent
-      border: 2px solid $neutral-color
-      color: $neutral-color
+      border: 2px solid $btn-warning
+      color: $btn-warning
       &:hover
-        background: $neutral-color
+        background: $btn-warning
+        color: $white
+
+  &.danger
+    background: $btn-danger
+    color: $white
+    &:hover, &:active, &:focus
+      background: darken($btn-danger, 10%)
+      outline: none
+    &.outlined
+      background: transparent
+      border: 2px solid $btn-danger
+      color: $btn-danger
+      &:hover
+        background: $btn-danger
+        color: $white
+
+  &.fun
+    background: $btn-fun
+    color: $white
+    &:hover, &:active, &:focus
+      background: darken($btn-fun, 10%)
+      outline: none
+    &.outlined
+      background: transparent
+      border: 2px solid $btn-fun
+      color: $btn-fun
+      &:hover
+        background: $btn-fun
         color: $white
   .icon
     float: right
