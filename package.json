@@ -2,7 +2,7 @@
   "name": "meow",
   "version": "1.0.0",
   "description": "Meow is a responsive grid and component library that is framework agnostic and 100% free.",
-  "keywords":[
+  "keywords": [
     "meow",
     "ui",
     "ui kit",
@@ -11,13 +11,14 @@
   ],
   "homepage": "https://www.meowui.com",
   "author": "Paul Ballas https://github.com/paulballas",
-  "license":"MIT",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
     "history": "^4.9.0",
     "node-sass": "^4.12.0",
     "prismjs": "^1.20.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",

@@ -1,5 +1,6 @@
 import React from 'react';
-import { matchPath, NavLink } from 'react-router-dom';
+import PropTypes from "prop-types";
+import { withRouter, NavLink } from 'react-router-dom';
 import Icon from '../components/Icon'
 
 const basicsLinks = (
@@ -15,7 +16,7 @@ const basicsLinks = (
     </NavLink>
     <NavLink
       className='nav-link'
-      exact to="/spacing">spacing
+      exact to="/basics/spacing">spacing
     </NavLink>
     <NavLink
       className='nav-link'
@@ -62,17 +63,19 @@ const navLinks = (
 )
 
 class SideBar extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeTab: ''
-    }
-  }
 
-  renderLinks = (s) => {
-    if (this.state.activeTab === 'basic' && s === 'basic') {
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
+
+  renderLinks = (section) => {
+    let path = this.props.location.pathname;
+
+    if (path.includes('/basics') && section === 'basic') {
       return basicsLinks
-    } else if (this.state.activeTab === 'components' && s === 'components') {
+    } else if (path.includes('/components') && section === 'components') {
       return navLinks
     } else {
       return null
@@ -80,20 +83,13 @@ class SideBar extends React.Component {
   }
 
   render() {
-    const { activeTab } = this.state
-    const match = matchPath("/basics/colors", {
-      path: "/basics/:id",
-      exact: true,
-      strict: false
-    });
+    const { match, location, history } = this.props;
 
     return (
       <div className='col-md-3 col-xs-12 bg--sidebar'>
-        <p>{match.path}</p>
-        <p>{match.url}</p>
+        <p>location: {location.pathname}</p>
         <div className='sidebar'>
           <NavLink
-            onClick={ () => this.setState({activeTab: 'home'}) }
             className='nav-link'
             exact to="/">
             <Icon
@@ -105,12 +101,7 @@ class SideBar extends React.Component {
           </NavLink>
           <NavLink
             to='/basics'
-            onClick={ () => this.setState({activeTab: 'basic'}) }
-            className={
-              activeTab === 'basic'?
-              'nav-link tab active-tab'
-              : 'nav-link tab'
-            }>
+            className='nav-link tab'>
             <Icon
               name='Circle'
               iconClass='md dark'
@@ -121,12 +112,7 @@ class SideBar extends React.Component {
           {this.renderLinks('basic')}
           <NavLink
             to='/components'
-            onClick={ () => this.setState({activeTab: 'components'}) }
-            className={
-              activeTab === 'components'?
-              'nav-link tab active-tab'
-              : 'nav-link tab'
-            }>
+            className='nav-link tab'>
             <Icon
               name='Hexagon'
               iconClass='md dark'
@@ -149,4 +135,4 @@ class SideBar extends React.Component {
   }
 }
 
-export default SideBar;
+export default withRouter(SideBar);

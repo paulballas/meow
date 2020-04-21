@@ -12,6 +12,7 @@ import MeowHome from './routes/MeowHome'
 /* Basics */
 import Colors from './routes/Colors'
 import Grid from './routes/Grid'
+import Spacing from './routes/Spacing'
 import Type from './routes/Type'
 
 /* Components */
@@ -39,6 +40,7 @@ function App() {
             <Route path="/basics" exact component={Basics} />
             <Route path="/basics/colors" exact component={Colors} />
             <Route path="/basics/grid" exact component={Grid} />
+            <Route path="/basics/spacing" exact component={Spacing} />
             <Route path="/basics/typography" exact component={Type} />
 
             <Route path="/components" exact component={MeowComponents} />
