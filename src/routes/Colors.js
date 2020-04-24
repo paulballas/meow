@@ -36,9 +36,26 @@ $link: $eggplant-3
 // Backgrounds & Boxes
 $background-primary: $salt-1
 $background-secondary: $lily-1
+$background-active: $gigas-3
+$border-active: $gigas-4
 $border-primary: $salt-3
 $border-light-1: $lily-2
 $border-light-2: $lily-3
+
+// Statuses
+$status-success: $gigas-3
+$status-warning: $pomegranate-3
+$status-danger: $razz-4
+$status-neutral: $lily-4
+$status-fun: $razz-2
+
+// Buttons
+$btn-primary: $gigas-3
+$btn-secondary: $wood-3
+$btn-tertiary: $lily-4
+$btn-warning: $pomegranate-3
+$btn-danger: $razz-4
+$btn-fun: $razz-2
 
 // Icons
 $icon-light: $white
@@ -46,6 +63,9 @@ $icon-dark: $currant-4
 $icon-pop-1: $razz-3
 $icon-pop-2: $gigas-3
 $icon-danger: $pomegranate-3
+
+// Modals
+$modal-background: rgba($gigas-4, 0.6)
 
 // Other
 $divider: $razz-2

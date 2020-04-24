@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import Space from '../components/Space.js'
+import MeowTable from '../components/MeowTable.js'
 import { PrismCodeLight } from '../components/PrismCodeLight'
 
 class Grid extends React.Component {
@@ -63,15 +64,33 @@ class Grid extends React.Component {
               <div className='sub-title-line' />
               <h2 className='title'>Grid</h2>
               <h5>Responsive grid based on flexbox.</h5>
-              <p className='lg'>Meow doesn't reinvent the wheel. It is a 12 column grid with five breakpoints: xs, sm, md, lg, and xl. The Meow grid is based on the <a href='https://getbootstrap.com/docs/4.4/layout/grid/'>Bootstrap grid</a>... which you're probably already familar with.</p>
-              <p>
-                <code>{gridCode}</code>
-              </p>
+
+              <p className='lg'>Meow's grid is a mobile-first, 12 column, responsive framework for creating uniform layouts.  The grid is built with <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a> rather than floats for an adjustable layout.</p>
+
+              <p className='lg'>We're not reinventing the wheel - our grid is heavily based on <a href='https://getbootstrap.com/docs/4.4/layout/grid/'>Bootstrap's grid</a>. The breakpoints are as follows:</p>
+            </div>
+          </div>
+
+          <div className='row m-b-2-xs'>
+            <div className='col-md-6 col-md-offset-3 col-xs-12'>
+              <MeowTable
+                tableHeaders={['Name', 'Breakpoint']}
+                tableRows={[
+                  ['xs', '287px'],
+                  ['sm', '464px'],
+                  ['md', '752px'],
+                  ['lg', '1216px'],
+                  ['xl', '1967px']
+                ]}
+                singleRow={true}
+                centered={true}
+              />
             </div>
           </div>
 
           <div className='row'>
             <div className='col-xs-12'>
+              <p><code>{gridCode}</code></p>
               <label className='grid-label'>
                 justification: <span>{this.state.justification}</span>
               </label>

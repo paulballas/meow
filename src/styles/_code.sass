@@ -137,6 +137,7 @@ pre[class*="language-"]
     cursor: help
 
 code[class*=" language-sass"]
+  color: #CBCFD7
   .token
     &.comment, &.prolog, &.doctype, &.cdata
       color: slategray
@@ -155,12 +156,16 @@ code[class*=" language-sass"]
     &.operator, &.entity, &.url
       color: #E289FF
   .language-css .token.string, .style .token.string
-    color: #f8f8f2
+    color: #f8f8f27
   .token
+    &.variable-line
+      color: #CBCFD7
     &.plain-text
       color: #CBCFD7
     &.variable
       color: #f92672
+      &::first-letter
+        color: #CBCFD7
     &.atrule, &.attr-value, &.function
       color: $blue-1
     &.class-name

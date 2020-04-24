@@ -24,18 +24,33 @@ class MeowTableHeader extends React.Component {
       flipArrow: !this.state.flipArrow
     })
   }
+
+  yo = () => {
+    if (this.props.icon) {
+      return (
+        <div
+          className='meow-th icon'
+          onClick={ () => this.flipArrow()}>
+          {this.props.name}
+          <Icon
+            name={this.renderArrowIcon()}
+            iconClass='sm white'
+            label={this.props.arrowDirection}/>
+        </div>
+      )
+    } else {
+      return (
+        <div className='meow-th'>
+          {this.props.name}
+        </div>
+      )
+    }
+  }
   render() {
     return (
-      <div
-        className='meow-th'
-        onClick={ () => this.flipArrow()}>
-        {this.props.name}
-        <Icon
-          name={this.renderArrowIcon()}
-          iconClass='sm white'
-          label={this.props.arrowDirection}
-        />
-    </div>
+      <>
+      { this.yo() }
+      </>
     )
   }
 

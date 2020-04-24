@@ -146,13 +146,27 @@
   margin-top: 0
   margin-bottom: 1rem
 
-p, li, a,
+@mixin font-table($size, $weight)
+  font-family: 'Akrobat'
+  font-size: $size
+  font-weight: $weight
+  line-height: 1.3
+  color: $text-primary
+  margin: 0
+
+p, li, a
   @include font-default(1rem, 600)
   &.lg
     font-size: 1.25rem
 
 p > a
   font-size: inherit
+
+th, .meow-th
+  @include font-table(1rem, 700)
+
+td, .meow-td
+  @include font-table(1rem, 600)
 
 span
   @include font-default(inherit, inherit)

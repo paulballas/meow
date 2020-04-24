@@ -1,5 +1,8 @@
 .meow-table
   display: block
+  &.centered
+    *
+      text-align: center
   &.x-scroll
     overflow-x: scroll
     .meow-tr
@@ -9,42 +12,40 @@
       margin-bottom: -2px
       .meow-th,
       .meow-td,
-        border-top: 2px solid $border-primary
-        border-bottom: 2px solid $border-primary
+        border-top: 2px solid $table-border
+        border-bottom: 2px solid $table-border
         border-left: none
         border-right: none
         &:first-child
-          border-left: 2px solid $border-primary
+          border-left: 2px solid $table-border
         &:last-child
-          border-right: 2px solid $border-primary
+          border-right: 2px solid $table-border
   .meow-tr
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
-    background: $salt-1
+    background: $odd-rows
     &:nth-child(even)
-      background: $white
+      background: $even-rows
     .meow-th,
     .meow-td
-      border: 1px solid $border-primary
+      border: 1px solid $table-border
       display: block
       width: 100%
       padding: 0.875rem
       box-sizing: border-box
     .meow-th
-      background: $background-active
-      font-weight: 700
+      background: $wood-1
       color: $white
-      &:hover
-        cursor: pointer
-        color: $background-secondary
-        .icon path
-          fill: $background-secondary
+      &.icon
+        &:hover
+          cursor: pointer
+          color: $background-secondary
+          .icon path
+            fill: $background-secondary
       .icon
         display: inline-block
         vertical-align: text-bottom
         margin-left: 0.25rem
         min-height: 1.125rem
-    .meow-td
-      font-weight: 500
