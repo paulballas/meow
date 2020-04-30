@@ -16,6 +16,14 @@ class Basics extends React.Component {
           <div className='row'>
             <div className='col-xs-12'>
               <List
+                title='Colors: '
+                location='/basics/colors'
+                large={true}
+                content='The color spectrum of meow.'
+                />
+            </div>
+            <div className='col-xs-12'>
+              <List
                 title='Grid: '
                 location='/basics/grid'
                 large={true}
@@ -27,7 +35,7 @@ class Basics extends React.Component {
                 title='Spacing: '
                 location='/basics/spacing'
                 large={true}
-                content='Clean and consistent alignment with margin, padding, height, and width.'
+                content='Consistent alignment via margin, padding, height, and width.'
                 />
             </div>
             <div className='col-xs-12'>

@@ -7,20 +7,44 @@ const basicsLinks = (
   <div>
 
     <NavLink
-      className='nav-link'
-      exact to="/basics/colors">colors
+      className='nav-link shown'
+      exact to="/basics/colors">
+      <Icon
+        name='Circle'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      colors
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/basics/grid">grid
+      className='nav-link shown'
+      exact to="/basics/grid">
+      <Icon
+        name='Circle'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      grid
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/basics/spacing">spacing
+      className='nav-link shown'
+      exact to="/basics/spacing">
+      <Icon
+        name='Circle'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      spacing
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/basics/typography">typography
+      className='nav-link shown'
+      exact to="/basics/typography">
+      <Icon
+        name='Circle'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      typography
     </NavLink>
   </div>
 )
@@ -28,40 +52,94 @@ const basicsLinks = (
 const navLinks = (
   <div>
     <NavLink
-      className='nav-link'
-      exact to="/components/alerts">alerts
+      className='nav-link shown'
+      exact to="/components/alerts">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      alerts
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/buttons">buttons
+      className='nav-link shown'
+      exact to="/components/buttons">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      buttons
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/cards">cards
+      className='nav-link shown'
+      exact to="/components/cards">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      cards
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/dropdowns">dropdowns
+      className='nav-link shown'
+      exact to="/components/dropdowns">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      dropdowns
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/forms">forms
+      className='nav-link shown'
+      exact to="/components/forms">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      forms
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/lists">lists
+      className='nav-link shown'
+      exact to="/components/lists">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      lists
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/modals">modals
+      className='nav-link shown'
+      exact to="/components/modals">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      modals
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/pagination">pagination
+      className='nav-link shown'
+      exact to="/components/pagination">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      pagination
     </NavLink>
     <NavLink
-      className='nav-link'
-      exact to="/components/tables">tables
+      className='nav-link shown'
+      exact to="/components/tables">
+      <Icon
+        name='Hexagon'
+        iconClass='xs dark'
+        label='Meow Components Icon'
+      />
+      tables
     </NavLink>
   </div>
 )
@@ -88,11 +166,11 @@ class SideBar extends React.Component {
 
   render() {
     const { match, location, history } = this.props;
-    const forRef = <p>location: {location.pathname}</p>
+    const forRef = <p>{location.pathname}</p>
 
     return (
-      <div className='col-md-3 col-xs-12 bg--sidebar'>      
-        <div className='sidebar'>
+      <div className='col-md-3 col-xs-12 bg--sidebar'>
+        <div className='sidebar'>        
           <NavLink
             className='nav-link'
             exact to="/">
@@ -105,7 +183,7 @@ class SideBar extends React.Component {
           </NavLink>
           <NavLink
             to='/basics'
-            className='nav-link tab'>
+            className={location.pathname !== '/basics'? 'nav-link tab' :'nav-link tab only' }>
             <Icon
               name='Circle'
               iconClass='md dark'
@@ -116,7 +194,7 @@ class SideBar extends React.Component {
           {this.renderLinks('basic')}
           <NavLink
             to='/components'
-            className='nav-link tab'>
+            className={location.pathname !== '/components'? 'nav-link tab' :'nav-link tab only' }>
             <Icon
               name='Hexagon'
               iconClass='md dark'
